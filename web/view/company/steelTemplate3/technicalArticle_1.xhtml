@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:e="http://www.ejs.com/core"
+	xmlns:a="http://richfaces.org/a4j" xmlns:r="http://richfaces.org/rich">
+<ui:composition template="/ee/template/framework.xhtml">
+	<ui:define name="title">steelTemp3--技术文章</ui:define>
+	<ui:define name="body">
+	<link rel="stylesheet" type="text/css" href="${facesContext.externalContext.requestContextPath}/css/companyShops/steelTemplate3.css" />
+	
+		<div id="wrapper">
+			<div id="container">
+				
+				<!-- header  -->
+				<div><ui:include  src="/ee/companyShops/steelTemplate3/header.xhtml" /></div>
+				
+				<div class="container-right_fixed">
+					<div class="workarea">
+						<div class="welcomezone">
+							  <h1><strong>技术文章</strong></h1>
+			                  <div class="article_head">拉伸冷冲模材料选择</div>
+							  <div>
+							  	<p class="font_p">若被加工的选择材料是钢铁材料，无论采用何种模具钢或铸铁，在没有任何采用合适的表面处理情况下，一般都很难解决工件的拉伤问题。</p>
+								<p class="font_p">从模具凸、凹模材料入手解决工件的拉伤问题，可以采用硬质合金，一般情况下，由这种材料制作的凸、凹模抗拉伤性能很高，存在的问题是材料成本高，不易加工，对于较大型的模具，由于烧制大型硬质合金块较困难，即使烧制成功，加工过程也有可能出现开裂，成材率低，有些几乎难以成形。此外硬脂合金性脆，搬运、安装使用过程中都要极其小心，稍有不慎就有可能出现崩块或开裂而报废。另外由于硬质合金的组织结构是由硬质的碳化钨颗粒和软的粘结相钻所组成，硬质碳化钨颗粒的耐磨抗咬合性能很高，而钴相由于硬度很低，耐磨性较差，使用过程中钴相会优先磨损，使凸、凹模表面形成凹凸不平，如此生产出来的工件表面也会出现拉痕，此时需对模具凸、凹模表面进行研磨抛光后方可进行再生产。对于奥氏体不锈钢工件，由于其面心立方结构也容易与钴相形成咬合而使工件的表面出现拉伤。</p>　　
+								<p class="font_p">采用合适的铜基合金也可解决工件的拉伤问题，但铜基合金一般硬度较低，易出现磨损超差，在大批量生产的情况下，这种材料的性价比较低。</p>　
+　　								<p class="font_p">对于较大型的模具，如汽车覆盖件的成形模具，大量采用了合金铸铁，铸铁只能减轻工件的拉伤，无法消除拉伤问题，要彻底解决拉伤问题需辅以渗氮，镀硬铬等表面处理。但如此制作的模具往往寿命较短，在使用一段时间后，如出现拉伤，又需修模并重新进行表面处理。</p>
+								<p class="font_p">在模具材料方面，也有采用陶瓷制作模具凸、凹模并成功解决工件拉伤问题的报道。由于其性脆，成本高，不可能大批量推广应用。</p>　　
+								<p class="font_p">对于生产批量很小而形状简单的大型拉伸类模具，也有采用橡胶等高分子类材料制作模具凸、凹模的报道，此类模具不会拉伤工件表面，但实际应用很少。</p>
+								<p class=" font_p return"><a href="${facesContext.externalContext.requestContextPath}/ee/companyShops/steelTemplate3/technicalArticle.xhtml">返回</a></p>
+							  </div>
+						</div>
+					</div>
+			
+			</div>	
+				
+				<div><ui:include  src="/ee/companyShops/steelTemplate3/footer.xhtml" /></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</ui:define>
+</ui:composition>
+</html>

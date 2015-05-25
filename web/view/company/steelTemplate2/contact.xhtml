@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:e="http://www.ejs.com/core"
+	xmlns:a="http://richfaces.org/a4j" xmlns:r="http://richfaces.org/rich">
+<ui:composition template="/ee/template/framework.xhtml">
+	<ui:define name="title">steelTemp2--联系我们</ui:define>
+	
+	<ui:define name="body">
+		<link rel="stylesheet" type="text/css" href="${facesContext.externalContext.requestContextPath}/css/companyShops/steelTemplate2.css" />
+		<link rel="stylesheet" type="text/css" href="${facesContext.externalContext.requestContextPath}/css/companyShops/steelTemplate2_img.css" />
+		
+		<script type="text/javascript" src="${facesContext.externalContext.requestContextPath}/js/companyShops/steelTemplate2/jquery-1.6.4.min.js"></script>
+		<script type="text/javascript" src="${facesContext.externalContext.requestContextPath}/js/companyShops/steelTemplate2/jquery.nivo.slider.js"></script>
+		<script type="text/javascript" src="${facesContext.externalContext.requestContextPath}/js/companyShops/steelTemplate2/cufon-yui.js"></script>
+		<script type="text/javascript" src="${facesContext.externalContext.requestContextPath}/js/companyShops/steelTemplate2/TitilliumText.font.js"></script>
+		<script type="text/javascript" src="${facesContext.externalContext.requestContextPath}/js/companyShops/steelTemplate2/scripts.js"></script>
+		<script type="text/javascript" src="${facesContext.externalContext.requestContextPath}/js/companyShops/steelTemplate2/custom.js"></script>
+		<script type="text/javascript" src="${facesContext.externalContext.requestContextPath}/js/companyShops/steelTemplate2/shortcode.js"></script>
+		<script type="text/javascript" src="${facesContext.externalContext.requestContextPath}/js/companyShops/steelTemplate2/swfobject.js"></script>
+		
+		<body class="home">
+			<!--Header-->
+			<div><ui:include  src="/ee/companyShops/steelTemplate2/header.xhtml" /></div>
+			<!--/Header end-->
+				
+			<!--Body content-->
+			<div class="full-width-wrapper">
+			  	<div class="fixed-width-wrapper" id="body-content">
+			    	<!--Content-->
+			    	<div id="content" class="float-left content-left">
+			      		<div class="header-text">
+					        <ul id="breadcrumbs">
+					          <li><a href="#" title="">主页</a></li>
+					          <li class="current"><a href="#" title="">联系我们</a></li>
+					        </ul>
+					        <h1 class="first-word double-color sp"><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate2/contact us.png" /></h1>
+					    </div>
+				      	<div class="post entry-content">
+				      		<p>汉达精密电子有限公司总部位于台湾林口华亚科技园区，并于越南的北宁、中国的江苏昆山及广东顺德设有多个生产单位。主要业务为信息产品机构件的打样、模具设计、开模、塑料射出、冲压到涂装、印刷及后段组装；可提供从模型到量产端，完整的机构解决方案。</p>
+				        	<div class="first one-half address">
+				        		<h3 class="first-word">昆山分公司</h3>
+				          		<span class="map-point"></span>
+				          		<p><strong>江苏昆山</strong><br/>江苏省昆山市长江南路出口加工区第2大道269号.<br/>Tel：0512-57367777</p>
+				        	</div>
+					        <div class="one-half address">
+								<h3 class="first-word">顺德分公司</h3>
+					          	<span class="map-point"></span>
+					          	<p><strong>广东顺德</strong><br/>广东省佛山市顺德区伦教街道熹涌伦兴中路一号 <br/>Tel：0512-57367777</p>          
+					        </div>
+			        	<div class="clear"></div>
+			        
+			        	<div class="sp"></div>
+			        	<h5><strong>您可以给我们留言</strong></h5>
+			       		<!--Contact form-->
+			        	<form method="post" action="#" id="contact-form" class="maxx-form">
+				        	<div class="form-row">
+				            	<label class="form-row-label">姓名:<span class="star">*</span></label>
+				            	<input class="input-field required" style="width:400px" type="text" name="name" />
+				          	</div>
+				          	<div class="form-row">
+				            	<label class="form-row-label">邮箱:<span class="star">*</span></label>
+				            	<input class="input-field required email" style="width:400px" type="text" name="email" />
+				          	</div>
+				          	<div class="form-row">
+				            	<label class="form-row-label">主题:<span class="star">*</span></label>
+				           		<input class="input-field required" style="width:400px" type="text" name="subject" />
+				          	</div>
+				          	<div class="form-row">
+				            	<label class="form-row-label">留言:<span class="star">*</span></label>
+				            	<textarea class="input-field required" style="width:400px" name="message" rows="5" cols="1" ></textarea>
+				          	</div>
+				          	<div class="form-row">
+				            	<label class="form-row-label"></label>
+				            	<button type="submit" class="black border-radius-3px bold submit" title="">发送信息</button>
+				          	</div>
+				        </form>
+			        	<!--/Contact form-->
+			      	</div>
+			    </div>
+			    	<!--/Content-->
+			    	
+			    	<!--Sidebar-->
+			    	<div id="sidebar" class="float-right">
+				      	<div >
+				        	<h1 class="first-word double-color sp"><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate2/map.png" /></h1>
+				        	<div class="img-border preloading-light"><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate2/locatemap.jpg" alt="" /></div>
+				      	</div>
+			    	</div>
+			    	<!--/Sidebar-->
+			  </div>
+			
+				<!--Get in touch-->
+				<div id="get-in-touch" class="fixed-width-wrapper">
+					<div class="via-phone-number float-left">
+						<a class="icon sprite float-left" title="Keep in touch with us">Keep
+							in touch with us</a>
+						<h2>
+							<strong>欢迎来电咨询</strong><strong style="color: #ff7300;">
+								400-678-0626</strong>
+						</h2>
+						<span>我们致力为客户带来更好的服务！</span>
+					</div>
+					<div class="via-email float-right">
+						<img
+							src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate2/service.png" />
+					</div>
+				</div>
+				<!--/Get in touch-->
+			
+			</div>
+			<!--/Body end-->
+			
+			
+			
+			<!--Bottom start-->
+			<div><ui:include src="/ee/companyShops/steelTemplate2/footer.xhtml" /></div>
+			<!--Bottom end-->	
+		</body>
+
+	</ui:define>
+</ui:composition>
+</html>

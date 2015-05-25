@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:e="http://www.ejs.com/core"
+	xmlns:a="http://richfaces.org/a4j" xmlns:r="http://richfaces.org/rich">
+<ui:composition template="/ee/template/framework.xhtml">
+	<ui:define name="title">steelTemp4--关于我们</ui:define>
+	
+	<ui:define name="body">
+		<link rel="stylesheet" type="text/css" href="${facesContext.externalContext.requestContextPath}/css/companyShops/steelTemplate4.css" />
+
+		<div id="page">
+			<!-- header -->
+			<div><ui:include  src="/ee/companyShops/steelTemplate4/header.xhtml" /></div>
+			
+			<!--main banner-->
+			<div id="other_banner" align="center"><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/gif.gif" width="1000" height="170" /></div>
+		  	
+		  	<!-- 中间主体-->
+		  	<div>
+				<div id="about_left">
+					<div class="fenle">产品中心</div>
+					<ul id="left_list">
+						<li>冷作模具钢</li>
+						<li>热作模具钢</li>
+						<li>塑料模具钢</li>
+						<li>塑胶模具钢</li>
+						<li>铝材</li>
+						<li>粉末钢</li>
+						<li>其它钢材 </li>					
+					</ul>
+				</div>
+			
+			  	<div id="about_right" style="clear:none;" >
+					<div class="fontpadd" style="background:url(${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/company_bg.png) right bottom no-repeat; filter:alpha(opacity=30);">
+					<div class="page_head">关于我们</div>
+				  	<p><strong>GRS金属材料有限</strong>成立于 1999 年，为神达计算机机构的一员。 GRS金属在机构行业拥有多年丰富经验，是业内享负盛名的机构件供货商，GRS金属所经销的机构件主要应用在4C1M － 即消费性电子产品 (Consumer electronics) 、计算机产品 (Computer) 、通讯产品 (Communication) 、 汽车产品 (Car) 及移动电话 (Mobile) 范畴。 </p>　　 　 　 　 
+				  <p>GRS金属总部位于台湾林口华亚科技园区，并于越南的北宁、中国的江苏昆山及广东顺德设有多个生产单位。主要业务为信息产品机构件的打样、模具设计、开模、塑料射出、冲压到涂装、印刷及后段组装；可提供从模型到量产端，完整的机构解决方案。</p>　 　 　<p> GRS金属更拥有一套完整材料实验中心设备和 EMI 实验室，致力开发国际领先水平的科技。 汉达成立至今，一直秉 承 以客为尊的宗旨，并拥有广阔的客户为基础，同时更 掌握了全球约百分之十的 PC 生产量，服务据点遍布世界各国。</p>　 <p>一直以来，GRS金属均可以依据客户不同的需求，制造全方位客制化的产品，不管是大量生产还是小量多样，汉达都能满足各方面的需求。而且汉达拥有先进的机构件制造技术与垂直整合优势，不论在技术、质量或服务面，都深受国际大厂的认同和肯定。 </p>　　 　 <p>GRS金属在优秀的管理团队与精锐的工业研发专家之合作下，以紧握着市场趋势的最新技术，来瞬间达到满足客户需求的神圣使命。 </p>　 <p> 展望未来，GRS金属将致力于提升产品增值服务的质量，并用更前瞻性的眼光和虚心的学习态度去看待全球市场，立志在机构件行业里，成为世界舞台上所有国际大厂不可或缺的重要伙伴。</p> 
+				 </div>		 
+			</div>
+		
+			</div>
+			
+		
+			<!-- footer-->
+			<div id="footer" ><ui:include src="/ee/companyShops/steelTemplate4/footer.xhtml" /></div>
+		</div>
+
+	</ui:define>
+</ui:composition>
+</html>

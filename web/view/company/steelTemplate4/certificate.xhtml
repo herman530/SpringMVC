@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:e="http://www.ejs.com/core"
+	xmlns:a="http://richfaces.org/a4j" xmlns:r="http://richfaces.org/rich">
+<ui:composition template="/ee/template/framework.xhtml">
+	<ui:define name="title">steelTemp4--资质证书</ui:define>
+	
+	<ui:define name="body">
+		<link rel="stylesheet" type="text/css" href="${facesContext.externalContext.requestContextPath}/css/companyShops/steelTemplate4.css" />
+
+		<div id="page">
+			<!-- header -->
+			<div><ui:include  src="/ee/companyShops/steelTemplate4/header.xhtml" /></div>
+			
+			<!--main banner-->
+			<div id="other_banner" align="center"><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/gif.gif" width="1000" height="170" /></div>
+		  	
+		  	<!-- 中间主体-->
+		  	<div>
+			  	<!-- 产品列表 -->
+				<div id="about_left">
+					<div class="fenle">产品中心</div>
+					<ul id="left_list" >
+						<li>冷作模具钢</li>
+						<li>热作模具钢</li>
+						<li>塑料模具钢</li>
+						<li>塑胶模具钢</li>
+						<li>铝材</li>
+						<li>粉末钢</li>
+						<li>其它钢材 </li>				
+					</ul>
+				</div>
+		
+				<!-- 右边模块-->	
+				<div id="about_right">
+					<div class="fontpadd">
+						<div class="page_head">资讯证书</div>
+						<div class="certif_font" >工商认证</div>
+						<div style="float:left; text-align:left; width:350px; display:block;">
+							<p>公司名称： GRS金属材料有限 </p>
+						  	<p>公司简称： MPTK </p>
+						  	<p>注册号 ： 1659845443558 </p>
+						  	<p>注册地址： 江苏省昆山市长江南路出口加工区第二大道269号 </p>
+						  	<p>注册资本： 人民币2445.0万元 法人代表：</p>
+						  	<p>企业类型： 外资企业 </p>
+						  	<p>成立时间： 2002-01-28 </p>
+						</div>
+						<div style="float:left; text-align:left; width:350px; clear:right;">
+						  	<p>经营期限： 自 2002-01-28至2052-01-27 </p>
+						  	<p>经营范围： 生产加工</p>
+						  	<p>注册机关： 昆山市工商行政管理局 </p>
+						  	<p>主营行业： 模具制造;热处理;模具材料;五金零件</p>
+						  	<p>电话： 0512-57367777</p>
+						  	<p>传真： 0512-9854758</p>
+						  	<p>邮政编码： 215345</p>
+					   	</div>
+
+					   	<div style="height:20px; clear:both;"></div>
+	                    <div class="certif_font" >资质证书</div>
+					   	<div class="cert">
+					    	<ul>
+						  		<li><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/cert.jpg" /><div align="center">营业执照</div></li>
+								<li><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/cert.jpg" /><div align="center">授权书</div></li>
+								<li><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/cert.jpg" /><div align="center">授权书</div></li>
+						   	</ul>
+				      	</div>
+					</div>		 
+		
+				</div>
+			</div>
+			
+			<!-- footer-->
+			<div id="footer" ><ui:include src="/ee/companyShops/steelTemplate4/footer.xhtml" /></div>
+		</div>
+	</ui:define>
+</ui:composition>
+</html>

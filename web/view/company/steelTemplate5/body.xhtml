@@ -1,0 +1,338 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:e="http://www.ejs.com/core"
+	xmlns:a="http://richfaces.org/a4j" xmlns:r="http://richfaces.org/rich">
+<ui:composition template="/ee/template/framework.xhtml">
+	<ui:define name="title">steelTemp5--主页</ui:define>
+	
+	<ui:define name="body">
+		<link rel="stylesheet" type="text/css" href="${facesContext.externalContext.requestContextPath}/css/companyShops/steelTemplate5.css" />
+		
+		<!--<script type="text/javascript" src="${facesContext.externalContext.requestContextPath}/js/companyShops/glider.js"></script>
+		<script type="text/javascript" src="${facesContext.externalContext.requestContextPath}/js/companyShops/effects.js"></script>
+		<script type="text/javascript" src="${facesContext.externalContext.requestContextPath}/js/companyShops/prototype.js"></script>
+		-->
+		
+		<script type="text/javascript"> 
+			jQuery(document).ready(function(){
+				jQuery("ul.subnav").parent().append("<span></span>"); //Only shows drop down trigger when js is enabled - Adds empty span tag after ul.subnav	
+				jQuery("ul.topnav li span").click(function() { //When trigger is clicked...		
+					//Following events are applied to the subnav itself (moving subnav up and down)
+					jQuery(this).parent().find("ul.subnav").slideDown('fast').show(); //Drop down the subnav on click
+					jQuery(this).parent().hover(function() {
+					}, function(){	
+						jQuery(this).parent().find("ul.subnav").slideUp('slow'); //When the mouse hovers out of the subnav, move it back up
+					});
+					//Following events are applied to the trigger (Hover events for the trigger)
+					}).hover(function() { 
+						jQuery(this).addClass("subhover"); //On hover over, add class "subhover"
+					}, function(){	//On Hover Out
+						jQuery(this).removeClass("subhover"); //On hover out, remove class "subhover"
+				});
+			});
+		</script>
+		
+		<!-- 图片跑马灯 脚本-->
+		<script type="text/javascript" language="javascript">
+		 //<![CDATA[
+			window.onload=function(){
+				function getElement(id){
+					return document.getElementById(id);
+				}
+		
+				var speed=30;//滚动速度
+				var demo=getElement("demo");
+				var demo2=getElement("demo2");
+				var demo1=getElement("demo1");
+				demo2.innerHTML=demo1.innerHTML //复制demo1中的图片到demo2中
+				
+				function Marqueeleft(){//向左滚动
+					if( demo2.offsetWidth-demo.scrollLeft<=0)
+						demo.scrollLeft-=demo1.offsetWidth
+					else
+						demo.scrollLeft++
+				}
+				
+				function Marqueeright(){//向右滚动
+					if( demo2.offsetWidth-demo.scrollLeft>=565)
+						demo.scrollLeft+=demo1.offsetWidth
+					else
+						demo.scrollLeft--
+				}
+			
+				var MyMar=setInterval(Marqueeleft,speed)//自动开始滚动
+				Direction='Left';//设定初始方向为向左滚
+				demo.onmouseover=function() {clearInterval(MyMar)}
+				demo.onmouseout=function() {
+					if(Direction=='Left'){
+						MyMar=setInterval(Marqueeleft,speed)
+					}else if(Direction=='Right'){
+						MyMar=setInterval(Marqueeright,speed)
+					}
+				};
+				
+				getElement('left').onclick=function(){
+					clearInterval(MyMar);
+					MyMar=setInterval(Marqueeleft,speed)
+					Direction='Left';
+				};
+				getElement('left').onmouseover=function(){
+					this.style.opacity=0.3;
+					this.style.filter='alpha(opacity=30)';
+				}	
+				getElement('left').onmouseout=function(){
+					this.style.opacity=0.05;
+					this.style.filter='alpha(opacity=5)';
+				}
+			
+				getElement('right').onclick=function(){
+					clearInterval(MyMar);
+					MyMar=setInterval(Marqueeright,speed)
+					Direction='Right';
+				};
+				getElement('right').onmouseover=function(){
+					this.style.opacity=0.3;
+					this.style.filter='alpha(opacity=30)';
+				}	
+				getElement('right').onmouseout=function(){
+					this.style.opacity=0.05;
+					this.style.filter='alpha(opacity=5)';
+				}
+			}
+			//]]>
+		</script>
+		
+		<div class="container">
+			<!--heard -->
+			<div><ui:include  src="/ee/companyShops/steelTemplate5/header.xhtml" /></div>
+					
+		
+		<div class="mainWarp">
+		  	<div style="clear:both"></div>
+			<div class="bannimg" align="center"><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/prod_1.jpg" width="977" /></div>
+			<!--banner images end-->
+				<DIV class="index_right">
+					<div class="index_right_font">
+						<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/pao1.png" />
+					</div>
+					
+					<!--图片跑马灯-->
+					<div id="outer">
+					<a href="#" hidefocus="" id="left"><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/left.png" /></a>
+					<div id="demo">
+						<table width="995px" border="0" cellpadding="0" bgcolor="#FFFFFF">
+							<tbody><tr>
+								<td id="demo1" valign="top">
+									<table border="0" align="center" cellpadding="0" cellspacing="0">
+										<tbody><tr valign="top">
+											<td align="center"  >
+												<div>
+													<a href="#" class="listname"><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/pr1.jpg" class="listimage" />时尚新潮</a>
+												</div>
+											</td>
+											<td align="center"  >
+												<div>
+													<a href="#" class="listname"><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/pr2.jpg" class="listimage" />时尚新潮</a>
+												</div>
+					
+											</td>
+											<td align="center"  >
+												<div>
+													<a href="#" class="listname"><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/pr3.jpg" class="listimage" />时尚新潮</a>
+												</div>
+											</td>
+											<td align="center"  >
+												<div>
+													<a href="#" class="listname"><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/pr4.jpg" class="listimage" />时尚新潮</a>
+												</div>
+											</td>
+											<td align="center"  >
+												<div>
+													<a href="#" class="listname"><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/pr5.jpg" class="listimage" />时尚新潮</a>
+												</div>
+											</td>
+											<td align="center"  >
+												<div>
+													<a href="#" class="listname"><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/pr1.jpg" class="listimage" />时尚新潮</a>
+												</div>
+					
+											</td>
+											<td align="center"  >
+												<div>
+													<a href="#" class="listname"><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/pr2.jpg" class="listimage" />时尚新潮</a>
+												</div>
+											</td>
+											<td align="center"  >
+												<div>
+													<a href="#" class="listname"><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/pr3.jpg" class="listimage" />时尚新潮</a>
+												</div>
+											</td>
+										</tr>
+									</tbody></table>
+								</td>
+					
+								<td id="demo2" valign="top">
+									<table border="0" align="center" cellpadding="0" cellspacing="0">
+										<tbody><tr valign="top">
+											<td align="center"  >
+												<div>
+													<a href="#" class="listname">
+					
+														<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/pr1.jpg" class="listimage" />时尚新潮
+													</a>
+												</div>
+											</td>
+											<td align="center"  >
+												<div>
+													<a href="#" class="listname">
+														<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/pr2.jpg" class="listimage" />时尚新潮
+													</a>
+												</div>
+					
+											</td>
+											<td align="center"  >
+												<div>
+													<a href="#" class="listname">
+														<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/pr3.jpg" class="listimage" />时尚新潮
+													</a>
+												</div>
+											</td>
+											<td align="center"  >
+					
+												<div>
+													<a href="#" class="listname">
+														<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/pr4.jpg" class="listimage" />时尚新潮
+													</a>
+												</div>
+											</td>
+											<td align="center"  >
+												<div>
+													<a href="#" class="listname">
+					
+														<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/pr5.jpg" class="listimage" />时尚新潮
+													</a>
+												</div>
+											</td>
+											<td align="center"  >
+												<div>
+													<a href="#" class="listname">
+														<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/pr1.jpg" class="listimage" />时尚新潮
+													</a>
+												</div>
+					
+											</td>
+											<td align="center"  >
+												<div>
+													<a href="#" class="listname">
+														<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/pr1.jpg" class="listimage" />时尚新潮
+													</a>
+												</div>
+											</td>
+											<td align="center"  >
+					
+												<div>
+													<a href="#" class="listname">
+														<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/pr1.jpg" class="listimage" />时尚新潮
+													</a>
+												</div>
+											</td>
+										</tr>
+									</tbody></table>
+								</td>
+							</tr>
+						</tbody>
+						</table>
+					</div>
+					<a href="#" hidefocus="" id="right"><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/right.png" /></a>
+					</div>
+					<!--图片跑马灯 end-->
+						
+					<!--<div class="feature" id="my-glider">
+					<div class="scroller">
+						<div class="content">			
+							<DIV class="section" id="section1">
+							<A href="#" target="_blank"><IMG alt="" src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/pr1.jpg"/></A>
+							<A href="#" target="_blank"><IMG alt="" src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/pr2.jpg"/></A>
+							<A href="#" target="_blank"><IMG alt="" src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/pr3.jpg"/></A>
+							<A href="#" target="_blank"><IMG alt="" src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/pr4.jpg"/></A>
+							</DIV>
+							
+							<DIV class="section" id="section2">
+							<A href="#" target="_blank"><IMG alt="" src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/pr5.jpg"/></A>
+							<A href="#" target="_blank"><IMG alt="" src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/pr6.jpg"/></A>
+							<A href="#" target="_blank"><IMG alt="" src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/pr7.jpg"/></A>
+							<A href="#" target="_blank"><IMG alt="" src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/pr1.jpg"/></A>
+							</DIV>
+							
+							<DIV class="section" id="section3">
+							<A href="#" target="_blank"><IMG alt="" src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/pr1.jpg"/></A>
+							<A href="#" target="_blank"><IMG alt="" src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/pr2.jpg"/></A>
+							<A href="#" target="_blank"><IMG alt="" src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/pr3.jpg"/></A>
+							<A href="#" target="_blank"><IMG alt="" src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/pr4.jpg"/></A>
+							</DIV>
+							
+							<DIV class="section" id="section4">
+							<A href="#" target="_blank"><IMG alt="" src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/pr5.jpg"/></A>
+							<A href="#" target="_blank"><IMG alt="" src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/pr6.jpg"/></A>
+							<A href="#" target="_blank"><IMG alt="" src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/pr7.jpg"/></A>
+							<A href="#" target="_blank"><IMG alt="" src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/pr1.jpg"/></A>
+							</DIV>			
+						</div>
+					</div>
+					<A id="prevLink" onClick="my_glider.previous();return false;" href="#">Previous</A>
+					<A id="nextLink" onClick="my_glider.next();return false" href="#">Next</A>
+					<SCRIPT language="javascript" type="text/javascript">
+						var my_glider = new Glider('my-glider', {duration:0.5});
+					</SCRIPT>
+				</div>
+				--></DIV>
+				<!--产品展示 end-->
+			
+			<div class="index_left">
+				<div class="index_left_img" ><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/tel.png"  /></div>
+				<div class="index_left_font" style="">
+					<span style="font-weight:bold; font-size:15px;">联系我们</span><br/>电话：0521-9854785<br/>
+					<a href="mailto:service@email.com; ">邮箱：service@email.com</a>
+				</div>
+			</div>
+			<!--联系我们 end-->
+			
+			<div style="clear:both"></div>
+			
+			<div class="introd" >
+				<div class="introd_head" ><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/pao2.png" /></div>
+				<div class="introd_img" ><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/company.jpg"/></div>
+				<div class="introd_font" >
+					<p>汉达精密科技股份有限公司成立于 1999 年，为神达计算机机构的一员。 汉达精密在机构行业拥有多年丰富经验，是业内享负盛名的机构件供货商，汉达精密所经销的机构件主要应用在4C1M － 即消费性电子产品(Consumer electronics)、计算机产品(Computer)、通讯产品(Communication)、 汽车产品(Car)及移动电话(Mobile)范畴。</p>
+			    	<p>汉达精密总部位于台湾林口华亚科技园区，并于越南的北宁、中国的江苏昆山及广东顺德设有多个生产单位。主要业务为信息产品机构件的打样、模具设计、开模、塑料射出、冲压到涂装、印刷及后段组装；可提供从模型到量产端，完整的机构解决方案。 <a href="${facesContext.externalContext.requestContextPath}/ee/companyShops/steelTemplate5/companyIntro.xhtml">查看更多</a></p>	  	
+				</div>
+			</div>
+			<!--公司介绍 end -->
+		
+			<div style="clear:both;"></div>
+			
+			<div class="frind">
+				<div style="float:left; width:460px; margin:20px 0 0 20px;">
+				  <p><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/pao3.png" width="123" height="27" /></p>
+				  <p style="line-height:27px;">我司怎么怎么$%@$#%$^%^%^$%^￥%#@%@#￥%￥￥￥#%￥#%￥#%￥%￥%￥%@#%#！￥%@#￥%#￥%@#￥%@#￥%￥#%#￥%欢迎来电咨询！</p>
+			  </div>
+				<div style="float:right; width:500px; margin:20px 0 20px 0; padding-left:8px;">
+					<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/logo1.png" width="80" height="80" style="padding-left:8px" /> 
+					<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/logo2.jpg" width="80" height="80" style="padding-left:8px"/>
+					<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/logo3.jpg" width="80" height="80" style="padding-left:8px"/> 
+					<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/logo4.jpg" width="80" height="80" style="padding-left:8px"/> 
+					<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/logo5.png" width="80" height="80" style="padding-left:8px"/></div>
+			</div>
+		<!--main end-->
+	</div>
+</div>
+		
+	<div><ui:include src="/ee/companyShops/steelTemplate5/footer.xhtml" /></div>
+
+	</ui:define>
+</ui:composition>
+</html>

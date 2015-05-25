@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:e="http://www.ejs.com/core"
+	xmlns:a="http://richfaces.org/a4j" xmlns:r="http://richfaces.org/rich">
+<ui:composition template="/ee/template/framework.xhtml">
+	<ui:define name="title">steelTemp3--应用案例</ui:define>
+	<ui:define name="body">
+	<link rel="stylesheet" type="text/css" href="${facesContext.externalContext.requestContextPath}/css/companyShops/steelTemplate3.css" />
+	
+		<div id="wrapper">
+			<div id="container">
+				<!-- header  -->
+				<div><ui:include  src="/ee/companyShops/steelTemplate3/header.xhtml" /></div>
+				
+				<div class="container-right">
+					<div class="workarea">
+						<div class="welcomezone">
+							<h1><strong>应用案例</strong></h1>
+							<div style="padding-bottom:10px;">
+								<!-- 案例1 -->
+			                	<div class="ourprojectrow">
+			                    	<h6>塑胶模--液晶电视底座</h6>
+			                      	<div>
+				                      	<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate3/pro1.jpg" alt="" width="210" height="139" class="project-img" /> 
+				                        <p><strong>之前所用钢材：</strong>S136和CENAI,模具出现开裂。</p>
+				                        <p><strong>现用材料与工艺：</strong>2011年10月份开始采用SKD23,主要用于液晶电视面板前框模具和底座模具，比较之前所用钢材，使用SKD23省略了真空热处理和CNC二次加工两个步骤，节省了大量的成本，<br />
+				                            客户在使用SKD23时，一次性加工到模具所需尺寸，然后进行抛光、预留上光步骤，接着进行xxfvsdaf等离子处理，最后进行上光、抛光至模具要求等级。</p>
+				                        <p><strong>现状：</strong>此批模具两套，至今一直处理生产状态，无任何异常状态，估计量产己达100,000件以上，后续客户己多批次产用该材料。</p>
+				                        <div class="clear"></div>
+			                     	</div>
+			                        <!--<div style="font-weight:bold;">
+			                        	<div class="clear"></div>
+			                        </div>-->
+			                    </div>
+						     </div>
+						 </div>
+					 </div>
+					 
+					
+				</div>
+
+				<!-- footer -->
+				<div><ui:include  src="/ee/companyShops/steelTemplate3/footer.xhtml" /></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+
+	</ui:define>
+</ui:composition>
+</html>

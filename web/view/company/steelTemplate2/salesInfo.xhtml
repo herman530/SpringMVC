@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:e="http://www.ejs.com/core"
+	xmlns:a="http://richfaces.org/a4j" xmlns:r="http://richfaces.org/rich">
+<ui:composition template="/ee/template/framework.xhtml">
+	<ui:define name="title">steelTemp2--产品中心</ui:define>
+	
+	<ui:define name="body">
+		<link rel="stylesheet" type="text/css" href="${facesContext.externalContext.requestContextPath}/css/companyShops/steelTemplate2.css" />
+		<link rel="stylesheet" type="text/css" href="${facesContext.externalContext.requestContextPath}/css/companyShops/steelTemplate2_img.css" />
+		
+		<script type="text/javascript" src="${facesContext.externalContext.requestContextPath}/js/companyShops/steelTemplate2/jquery-1.6.4.min.js"></script>
+		<script type="text/javascript" src="${facesContext.externalContext.requestContextPath}/js/companyShops/steelTemplate2/jquery.nivo.slider.js"></script>
+		<script type="text/javascript" src="${facesContext.externalContext.requestContextPath}/js/companyShops/steelTemplate2/cufon-yui.js"></script>
+		<script type="text/javascript" src="${facesContext.externalContext.requestContextPath}/js/companyShops/steelTemplate2/TitilliumText.font.js"></script>
+		<script type="text/javascript" src="${facesContext.externalContext.requestContextPath}/js/companyShops/steelTemplate2/scripts.js"></script>
+		<script type="text/javascript" src="${facesContext.externalContext.requestContextPath}/js/companyShops/steelTemplate2/custom.js"></script>
+		<script type="text/javascript" src="${facesContext.externalContext.requestContextPath}/js/companyShops/steelTemplate2/shortcode.js"></script>
+		<script type="text/javascript" src="${facesContext.externalContext.requestContextPath}/js/companyShops/steelTemplate2/swfobject.js"></script>
+		
+		<body class="home">
+			<!--Header-->
+			<div><ui:include  src="/ee/companyShops/steelTemplate2/header.xhtml" /></div>
+			<!--/Header end-->
+				
+			<!--Body content-->
+			<div class="full-width-wrapper">
+				<div class="fixed-width-wrapper" id="body-content">
+			    	<!--Content-->
+			    	<div id="content" class="fixed-width-wrapper">
+			      		<div class="header-text">
+			        		<ul id="breadcrumbs">
+							  <li><a href="#" title="">主页</a></li>
+							  <li class="current"><a href="#" title="">产品中心</a></li>
+							</ul>
+			        		<h1 class="first-word double-color sp"><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate2/product.png" /></h1>
+						</div>
+			      	<div class="portfolio">
+						<ul class="portfolio-main filter">
+						  <li class="active all-projects"><a href="" title="">所有钢材</a></li>
+						  <li class="cat-item website"><a href="" title="">塑胶模具钢</a></li>
+						  <li class="cat-item logotype"><a href="" title="">冷作模具钢</a></li>
+						  <li class="cat-item identity"><a href="" title="">热作模具钢</a></li>
+						  <li class="cat-item motion-graphic"><a href="" title="">其他钢材</a></li>
+						</ul>
+				        <!--Porfolio Content-->
+			        	<div class="portfolio-content three-column clear">
+			          		<div data-id="post-1" data-type="website" class="block">
+								<a href="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate2/demo_pretty_pt1.jpg" title="" rel="prettyPhoto" class="img-border preloading-light align-none project-thumbnail image-preview" >
+									<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate2/website_a.jpg" alt="" />
+								</a>
+			            		<h5 class="first-word">NAK80塑胶模具钢</h5>
+					            <p>NAK80是预用塑胶模具钢，出厂硬度可以达到HRC37-43,有很好的抛光性和雕饰性，放电加工性佳。</p>
+			        		    <a class="read-more" href="#" title="Read more">Read more</a>
+			            		<div class="sp"></div>
+					        </div>
+			          		
+							<div data-id="post-2" data-type="motion-graphic" class="block" >
+								<a href="" title="" rel="prettyPhoto" class="img-border preloading-light align-none project-thumbnail video-preview" >
+									<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate2/website_b.jpg"  alt="" />
+								</a>
+								<h5 class="first-word">ASP23粉末高速钢</h5>
+								<p>ASP23是铬钼钒粉末钢，属于瑞典标准，典型代表瑞典一胜百，同系列的有ASP30，ASP60粉末高速钢。</p>
+								<a class="read-more" href="http://videohive.net/item/billboards/234174?ref=Manh" title="Read more">Read more</a>
+								<div class="sp"></div>
+			          		</div>
+					        
+							<div data-id="post-4" data-type="website" class="block" >
+								<a href="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate2/demo_pretty_pt.jpg" title="" rel="prettyPhoto" class="img-border preloading-light align-none project-thumbnail image-preview" >
+									<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate2/website_c.jpg" alt="" />
+								</a>
+								<h5 class="first-word">S136H塑胶模具钢</h5>
+								<p>经炉外精炼（VD）+电渣重熔精炼（ESR），组织列纯洁细微，优良的耐蚀性、抛光性，良好的耐磨、机械加工性，淬硬时优良的尺寸稳定性。.</p>
+								<a class="read-more" href="#" title="Read more">Read more</a>
+								<div class="sp"></div>
+							</div>
+			          		
+							<div data-id="post-5" data-type="website" class="block" >
+								<a href="images/pix/demo_pretty_pt.jpg" title="" rel="prettyPhoto" class="img-border preloading-light align-none project-thumbnail image-preview"><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate2/website_b.jpg" alt="" /></a>
+								<h5 class="first-word">718H预加硬塑胶模具钢</h5>
+								<p>瑞典高级预硬化塑胶模具钢，调质型塑料模具，良好的加工性和抗磨损性，硬度分布均一，具有良好的抛光性能，加工工艺简单，价格适中，因此用量较大。</p>
+								<a class="read-more" href="#" title="Read more">Read more</a>
+								<div class="sp"></div>
+			          		</div>
+			          		
+							<div data-id="post-6" data-type="logotype" class="block" >
+							  <a href="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate2/demo_pretty_pt.jpg" title="" rel="prettyPhoto" class="img-border preloading-light align-none project-thumbnail image-preview">
+							  	<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate2/website_c.jpg" alt="" />
+							  </a>
+							  <h5 class="first-word">DF2冷作模具钢</h5>
+								<p>加工性好，热处理尺寸稳定;优良的机械加工型;谇硬时，优良的尺寸稳定性;谇硬和回火后，由高的表面硬度与机体韧性的良好配合</p>
+								<a class="read-more" href="#" title="Read more">Read more</a>
+								<div class="sp"></div>
+						  	</div>
+			          		
+							<div data-id="post-7" data-type="identity" class="block" >
+								<a href="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate2/demo_pretty_pt.jpg" title="" rel="prettyPhoto" class="img-border preloading-light align-none project-thumbnail image-preview" >
+									<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate2/website_a.jpg" alt="" />
+								</a>
+								<h5 class="first-word">HLH30R高强热作模具钢</h5>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna.</p>
+								<a class="read-more" href="http://graphicriver.net/item/photoshop-magazine-add-v1/726307?ref=Manh" title="Read more">Read more</a>
+								<div class="sp"></div>
+			         		</div>
+					
+					        <div data-id="post-9" data-type="identity" class="block" >
+								<a href="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate2/demo_pretty_pt.jpg" title="" rel="prettyPhoto" class="img-border preloading-light align-none project-thumbnail image-preview" >
+									<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate2/website_c.jpg" alt="" />
+								</a>
+								<h5 class="first-word">8407热作压铸模具钢</h5>
+								<p>ASSAB 8407是铬、钼、钒合金工具钢，采用特殊炼钢技术和严密质量控制得以的纯度高且组织细微的钢材。</p>
+								<a class="read-more" href="http://graphicriver.net/item/trifold-brochure-v2/159700?ref=Manh" title="Read more">Read more</a>
+								<div class="sp"></div>
+			          		</div>
+			          		
+							<div data-id="post-10" data-type="logotype" class="block" >
+								<a href="images/pix/tricircle.jpg" title="" rel="prettyPhoto" class="img-border preloading-light align-none project-thumbnail image-preview" >
+									<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate2/website_a.jpg" alt="" />
+								</a>
+								<h5 class="first-word">DC53冷作钢</h5>
+								<p>被切削性好，被研磨性好,…</p>
+								<a class="read-more" href="#" title="Read more">Read more</a>
+								<div class="sp"></div>
+						  	</div>
+			
+				          	<div data-id="post-11" data-type="motion-graphic" class="block" >
+								<a href="images/pix/demo_pretty_pt.jpg" title="" rel="prettyPhoto" class="img-border preloading-light align-none project-thumbnail video-preview">
+									<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate2/website_b.jpg" alt="" />
+								</a>
+								<h5 class="first-word">GS2344耐腐压铸模具钢</h5>
+								<p>GS2344组织细微，韧性及延性佳，切削性抛光性优良，能低抗温度聚变及热应力疲劳，热处理后尺寸稳定不易变形。</p>
+								<a class="read-more" href="http://videohive.net/item/calm-and-easy/113271?ref=Manh" title="Read more">Read more</a>
+								<div class="sp"></div>
+							</div>
+							
+			        	</div>
+			        	<!--/Porfolio Content-->
+			        
+						<!--Pagination-->
+				        <div class="clear"></div>
+				        <div class="page-pagination clear fixed-width-wrapper">
+				        	<a href="#" title="">Prev</a>
+				        	<a href="#" title="">1</a>
+				        	<a href="#" title="" class="current">2</a>
+				        	<a href="#" title="">3</a>
+				        	<a href="#" title="">4</a>
+				        	<a href="#" title="">5</a>
+				        	<span>...</span>
+				        	<a href="#" title="">15</a>
+				        	<a href="#" title="">下一页</a>
+				        </div>
+				        <!--/Pagination-->
+			    	</div>
+				</div>
+				<!--/Content-->
+			  </div>
+			  
+			  <!--Get in touch-->
+				<div id="get-in-touch" class="fixed-width-wrapper">
+					<div class="via-phone-number float-left">
+						<a class="icon sprite float-left" title="Keep in touch with us">Keep
+							in touch with us</a>
+						<h2>
+							<strong>欢迎来电咨询</strong><strong style="color: #ff7300;">
+								400-678-0626</strong>
+						</h2>
+						<span>我们致力为客户带来更好的服务！</span>
+					</div>
+					<div class="via-email float-right">
+						<img
+							src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate2/service.png" />
+					</div>
+				</div>
+				<!--/Get in touch-->
+			  
+			</div>
+			<!--/Body end-->
+			
+			 
+			<!--Bottom start-->
+			<div><ui:include src="/ee/companyShops/steelTemplate2/footer.xhtml" /></div>
+			<!--Bottom end-->	
+		</body>
+
+	</ui:define>
+</ui:composition>
+</html>

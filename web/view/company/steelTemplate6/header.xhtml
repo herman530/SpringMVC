@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:e="http://www.ejs.com/core"
+	xmlns:a="http://richfaces.org/a4j" xmlns:r="http://richfaces.org/rich">
+<ui:composition template="/ee/template/blank.xhtml">
+	<ui:define name="content">
+	<link rel="stylesheet" type="text/css" href="${facesContext.externalContext.requestContextPath}/css/companyShops/steelTemplate6.css" />
+		<h1>Company Name</h1>
+		<hr />
+		<div id="menu2" class="menu">
+			<ul>
+				<li><a onclick="javascript:;" href="${facesContext.externalContext.requestContextPath}/ee/companyShops/steelTemplate6/body.xhtml">主页</a></li>			
+				<li><a onclick="javascript:;" href="${facesContext.externalContext.requestContextPath}/ee/companyShops/steelTemplate6/companyIntro.xhtml">关于我们</a></li>
+				<li><a onclick="javascript:;" href="${facesContext.externalContext.requestContextPath}/ee/companyShops/steelTemplate6/salesInfo.xhtml">产品中心</a></li>
+				<li><a onclick="javascript:;" href="${facesContext.externalContext.requestContextPath}/ee/companyShops/steelTemplate6/successfulCase.xhtml">应用案例</a></li>
+				<li><a onclick="javascript:;" href="${facesContext.externalContext.requestContextPath}/ee/companyShops/steelTemplate6/technicalArticle.xhtml">技术文章</a></li>
+				<li><a onclick="javascript:;" href="${facesContext.externalContext.requestContextPath}/ee/companyShops/steelTemplate6/contact.xhtml">联系我们</a></li>
+				<li><a onclick="javascript:;" href="${facesContext.externalContext.requestContextPath}/ee/companyShops/steelTemplate6/certificate.xhtml">资质证书</a></li>
+			</ul>
+		</div>
+	</ui:define>
+</ui:composition>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:e="http://www.ejs.com/core"
+	xmlns:a="http://richfaces.org/a4j" xmlns:r="http://richfaces.org/rich">
+<ui:composition template="/ee/template/framework.xhtml">
+	<ui:define name="title">steelTemp4--技术文章</ui:define>
+	
+	<ui:define name="body">
+		<link rel="stylesheet" type="text/css" href="${facesContext.externalContext.requestContextPath}/css/companyShops/steelTemplate4.css" />
+
+		<div id="page">
+			<!-- header -->
+			<div><ui:include  src="/ee/companyShops/steelTemplate4/header.xhtml" /></div>
+			
+			<!--main banner-->
+			<div id="other_banner" align="center"><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/gif.gif" width="1000" height="170" /></div>
+		  	
+		  	<!-- 中间主体-->
+		  	<div>
+			  	<!-- 产品列表 -->
+				<div id="about_left">
+					<div class="fenle">产品中心</div>
+					<ul id="left_list" >
+						<li>冷作模具钢</li>
+						<li>热作模具钢</li>
+						<li>塑料模具钢</li>
+						<li>塑胶模具钢</li>
+						<li>铝材</li>
+						<li>粉末钢</li>
+						<li>其它钢材 </li>				
+					</ul>
+				</div>
+		
+				<!-- 右边模块-->	
+				<div id="about_right">
+					<div  class="caselist">
+						<div class="page_head">技术文章</div>
+						<ul>
+							<li><a href="${facesContext.externalContext.requestContextPath}/ee/companyShops/steelTemplate4/technicalArticle_1.xhtml" >关于拉伸类模具表面拉伤问题与处理方法</a></li>
+							<li><a href="article_two.html">压铸模H13模具钢的淬火工艺</a></li>
+							<li><a href="article_three.html">钢的表面热处理</a></li>
+							<li>技术文章标题</li>
+							<li>技术文章标题</li>
+							<li>技术文章标题</li>
+							<li>技术文章标题</li>
+							<li>技术文章标题</li>
+							<li>技术文章标题</li>
+							<li>技术文章标题</li>
+						</ul>
+					</div> 
+				    <div style="height:30px; clear:both"></div>		 
+				</div>
+			</div>
+			
+			<!-- footer-->
+			<div id="footer" ><ui:include src="/ee/companyShops/steelTemplate4/footer.xhtml" /></div>
+		</div>
+	</ui:define>
+</ui:composition>
+</html>

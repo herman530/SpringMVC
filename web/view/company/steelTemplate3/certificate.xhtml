@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:e="http://www.ejs.com/core"
+	xmlns:a="http://richfaces.org/a4j" xmlns:r="http://richfaces.org/rich">
+<ui:composition template="/ee/template/framework.xhtml">
+	<ui:define name="title">steelTemp3--主页</ui:define>
+	<ui:define name="body">
+	<link rel="stylesheet" type="text/css" href="${facesContext.externalContext.requestContextPath}/css/companyShops/steelTemplate2.css" />
+	
+		<div id="wrapper">
+			<div id="container">
+				
+				<!-- header  -->
+				<div><ui:include  src="/ee/companyShops/steelTemplate3/header.xhtml" /></div>
+				
+				<div class="container-right">
+					<div class="workarea">
+						<div class="welcomezone">
+							  <h1><strong>资质证书</strong></h1>
+							  <div class="ourprojectrow"><br />
+			                  		<h6>工商注册信息</h6>
+									<div style=" float:right;margin:0; padding:0; margin-right:35px;">
+										<p>经营范围： 生产加工</p>
+										<p>注册机关： 昆山市工商行政管理局 </p>
+										<p>主营行业： 模具制造;热处理;模具材料;五金零件</p>
+										<p>电话： 0512-57367777</p>
+										<p>传真： 0512-9854758</p>
+										<p>邮政编码： 215345</p>
+									</div>
+			                        <p>公司名称： 汉达精密电子(昆山)有限公司 </p>
+									<p>公司简称： MPTK </p>
+									<p>注册号 ： 1659845443558 </p>
+									<p>注册地址： 江苏省昆山市长江南路出口加工区第二大道269号 </p>
+									<p>注册资本： 人民币2445.0万元 法人代表：</p>
+									<p>企业类型： 外资企业 </p>
+									<p>成立时间： 2002-01-28 </p>
+									<p>经营期限： 自 2002-01-28至2052-01-27 </p>							
+			                        <div class="clear"></div>
+			                </div>
+							<div class="ourprojectrow"><br />
+			                	<h6>资质证书</h6>
+								<table width="700" border="0" cellpadding="0" cellspacing="0">
+			                    	<tr>
+			                        	<td align="center"><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate3/bo1.jpg" width="125" height="155" /></td>
+			                            <td align="center"><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate3/bo1.jpg" width="125" height="155" /></td>
+			                            <td align="center"><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate3/bo1.jpg" width="125" height="155" /></td>
+			                            <td align="center"><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate3/bo1.jpg" width="125" height="155" /></td>
+			                        </tr>
+			                        <tr>
+			                            <td align="center">&nbsp;</td>
+			                            <td align="center">&nbsp;</td>
+			                            <td align="center">&nbsp;</td>
+			                            <td align="center">&nbsp;</td>
+			                        </tr>
+			                   	</table>
+								<div class="clear"></div>
+			                </div>
+			                <div style="font-weight:bold;"><div class="clear"></div></div>
+			              </div>
+					</div>
+					<div style="height: 200px;"></div>
+			</div>
+				<div><ui:include  src="/ee/companyShops/steelTemplate3/footer.xhtml" /></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+
+	</ui:define>
+</ui:composition>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:e="http://www.ejs.com/core"
+	xmlns:a="http://richfaces.org/a4j" xmlns:r="http://richfaces.org/rich">
+<ui:composition template="/ee/template/framework.xhtml">
+	<ui:define name="title">steelTemp4--联系我们</ui:define>
+	
+	<ui:define name="body">
+		<link rel="stylesheet" type="text/css" href="${facesContext.externalContext.requestContextPath}/css/companyShops/steelTemplate4.css" />
+
+		<div id="page">
+			<!-- header -->
+			<div><ui:include  src="/ee/companyShops/steelTemplate4/header.xhtml" /></div>
+			
+			<!--main banner-->
+			<div id="other_banner" align="center"><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/gif.gif" width="1000" height="170" /></div>
+		  	
+		  	<!-- 中间主体-->
+		  	<div>
+			  	<!-- 产品列表 -->
+				<div id="about_left">
+					<div class="fenle">产品中心</div>
+					<ul id="left_list" >
+						<li>冷作模具钢</li>
+						<li>热作模具钢</li>
+						<li>塑料模具钢</li>
+						<li>塑胶模具钢</li>
+						<li>铝材</li>
+						<li>粉末钢</li>
+						<li>其它钢材 </li>				
+					</ul>
+				</div>
+		
+				<!-- 右边模块-->	
+				<div id="about_right">
+					<div class="add">
+						<div class="page_head">联系我们</div>						
+					  	  <!--联系方式--> 
+						  <div class="contact" >
+								<ul style="list-style-type:none;">
+									<li style="font-size:14px;"><strong>汉达精密科技股份有限公司</strong></li>
+									<li>华东销售热线：0512-9874512/85475966</li>
+									<li>华南销售热线：0795-8547125/58698452</li>
+									<li>网址：<a href="http://www.mojiugancai.com.cn">www.mojiugancai.com.cn</a></li>					
+									<li>邮箱：<a href="mailto:service@pexetech.com">service@mail.com</a></li>
+									<li>传真：0512-9874512</li>
+									<li>手机：13865985471   杨先生</li>
+									<li>地址：昆山市综合保税区第二大道269号</li>		
+								</ul>
+						  </div>
+					 	
+					 	  <div style="clear: both;"></div>	
+						  <!--留言-->
+						  <div style="width:100%; margin-top:45px; text-align: left;">
+								<h5 style="padding-left:35px;">在此处留言:</h5>
+								<form action="form.php" method="post" style="margin-left:50px;">
+									<table width="89%">
+										<tr>
+											<td width="107" align="center" valign="top" id="Company">
+											<strong><label for="Company">公司:</label></strong></td>
+											<td width="631" align="left" valign="top"><input name="Company" type="text" size="40" /></td>
+										</tr>
+										<tr>
+											<td align="center" valign="top" id="Contact">
+											<strong><label for="FullName">姓名:</label></strong></td>
+											<td align="left" valign="top"><input name="Name" type="text" size="40" /></td>
+										</tr>
+										<tr>
+											<td align="center" valign="top" id="Address">
+											<strong><label for="Address">地址:</label></strong></td>
+											<td align="left" valign="top"><input name="Address" type="text" size="40" /></td>
+										</tr>
+										<tr>
+											<td align="center" valign="top" id="Phone">
+											<strong><label for="Phone">电话:</label></strong></td>
+											<td align="left" valign="top"><input name="Phone" type="text" size="40" /></td>
+										</tr>
+										<tr>
+											<td align="center" valign="top" id="Email">
+											<strong><label for="Email">邮箱:</label></strong></td>
+											<td align="left" valign="top"><input name="Email" type="text" size="40" /></td>
+										</tr>
+										<tr>
+											<td align="center" valign="top" id="Comments">
+											<strong><label for="Comments">留言:</label></strong></td>
+											<td align="left" valign="top"><textarea name="comments" cols="60" rows="4"></textarea></td>
+										</tr>
+										<tr>
+											<td></td>
+											<td><input type="submit" name="submit" class="button" value="提交" /></td>
+										</tr>
+								  </table>
+							  </form>
+						 </div>		 
+					</div>		 
+					
+				</div>
+			</div>
+			
+			<!-- footer-->
+			<div id="footer" ><ui:include src="/ee/companyShops/steelTemplate4/footer.xhtml" /></div>
+		</div>
+	</ui:define>
+</ui:composition>
+</html>

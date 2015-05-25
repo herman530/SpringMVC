@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:e="http://www.ejs.com/core" xmlns:a="http://richfaces.org/a4j"
+	xmlns:r="http://richfaces.org/rich">
+<ui:composition template="/ee/template/framework.xhtml">
+	<ui:define name="title">steelTemp6--技术文章</ui:define>
+
+	<ui:define name="body">
+		<link rel="stylesheet" type="text/css" href="${facesContext.externalContext.requestContextPath}/css/companyShops/steelTemplate6.css" />
+		<script type="text/javascript" src="${facesContext.externalContext.requestContextPath}/js/companyShops/jquery.min.js"></script>
+		<script type="text/javascript" src="${facesContext.externalContext.requestContextPath}/js/companyShops/steelTemplate6.js"></script>
+		
+
+		<div class="content">
+			<div id="center">
+				<!--heard -->
+				<div>
+					<ui:include src="/ee/companyShops/steelTemplate6/header.xhtml" />
+				</div>
+
+				<div id="center-left">
+					<div style="height: 10px;"></div>
+
+					<div class="pagetitle">
+						<h5>
+							<span style="float: left;">技术文章</span>
+						</h5>
+					</div>
+
+					<div align="center" id="center-left">
+						<div style="padding: 0px 20px;">
+							<h5 align="center" style="padding-bottom: 15px;">技术文章一</h5>
+							<p>表面淬火：是将钢件的表面通过快速加热到临界温度以上，但热量还未来得及传到心部之前迅速冷却，这样就可以把表面层被淬在马氏体组织，而心部没有发生相变，这就实现了表面淬硬而心部不变的目的，适用于中碳钢。</p>
+							<p>化学热处理：是指将化学元素的原子，借助高温时原子扩散的能力，把它渗入到工件的表面层去，来改变工件表面层的化学成分和结构，从而达到使钢的表面层具有特定要求的组织和性能的一种热处理工艺。按照渗入元素的种类不同，化学热处理可分为渗碳、渗氮、氰化和渗金属法等四种。</p>
+							<p>渗碳：渗碳是指使碳原子渗入到钢表面层的过程。也是使低碳钢的工件具有高碳钢的表面层，再经过淬火和低温回火，使工件的表面层具有高硬度和耐磨性，而工件的中心部分仍然保持着低碳钢的韧性和塑性。</p>
+							<p>渗氮：又称氮化，是指向钢的表面层渗入氮原子的过程。其目的是提高表面层的硬度与耐磨性以及提高疲劳强度、抗腐蚀性等。目前生产中多采用气体渗氮法。</p>
+							<p>氰化：又称碳氮共渗，是指在钢中同时渗入碳原子与氮原子的过程。它使钢表面具有渗碳与渗氮的特性。</p>
+							<p>渗金属：是指以金属原子渗入钢的表面层的过程。它是使钢的表面层合金化，以使工件表面具有某些合金钢、特殊钢的特性，如耐热、耐磨、抗氧化、耐腐蚀等。生产中常用的有渗铝、渗铬、渗硼、渗硅等。</p>
+						</div>
+						<div style="float: right; padding: 20px 20px 20px 0px;">
+							<a
+								href="${facesContext.externalContext.requestContextPath}/ee/companyShops/steelTemplate6/technicalArticle.xhtml">返回</a>
+						</div>
+					</div>
+
+				</div>
+
+				<div id="center-right">
+					<p class="pagetitle_right" >最新资讯</p>
+					<div class="page_rightbox" >
+						<ul style="list-style: none; margin: 5px 15px; overflow: hidden;">
+							<li style="padding: 10px;">
+								<div>
+									<img
+										src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate6/tab_img_1.png"
+										alt="" width="40" height="40" align="absmiddle"
+										style="position: relative;" /> <span>asdfsadfasdfasdfasdfasdfasdf</span>
+								</div></li>
+							<li style="padding: 10px;">
+								<div>
+									<img
+										src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate6/tab_img_2.png"
+										alt="" width="40" height="40" align="absmiddle"
+										style="position: relative;" /> <span>asdfsadfasdfasdfasdfasdfasdf</span>
+								</div></li>
+							<li style="padding: 10px;">
+								<div>
+									<img
+										src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate6/tab_img_3.png"
+										alt="" width="40" height="40" align="absmiddle"
+										style="position: relative;" /> <span>asdfsadfasdfasdfasdfasdfasdf</span>
+								</div></li>
+							<li style="padding: 10px;">
+								<div>
+									<img
+										src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate6/tab_img_2.png"
+										alt="" width="40" height="40" align="absmiddle"
+										style="position: relative;" /> <span>asdfsadfasdfasdfasdfasdfasdf</span>
+								</div></li>
+						</ul>
+					</div>
+
+					<!--联系我们-->
+					<p class="pagetitle_right">联系我们</p>
+					<div class="page_rightbox">
+						<ul id="co_intro_right">
+							<li>
+								<div>
+									<img
+										src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate6/phone.png"
+										alt="" align="absmiddle" style="position: relative;" /> <span
+										style="letter-spacing: 1px; font-size: 14px;">0512-5874587/5874586</span>
+								</div>
+							</li>
+							<li>
+								<div>
+									<img
+										src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate6/forward.png"
+										alt="" align="absmiddle" style="position: relative;" /> <span
+										style="letter-spacing: 1px; font-size: 14px;"><a
+										href="">service@mail.com</a>
+									</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- right end  -->
+			</div>
+		</div>
+	</ui:define>
+
+
+	<ui:define name="footer">
+		<div>
+			<ui:include src="/ee/companyShops/steelTemplate6/footer.xhtml" />
+		</div>
+	</ui:define>
+
+</ui:composition>
+</html>

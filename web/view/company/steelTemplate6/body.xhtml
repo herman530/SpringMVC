@@ -1,0 +1,370 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:e="http://www.ejs.com/core" xmlns:a="http://richfaces.org/a4j"
+	xmlns:r="http://richfaces.org/rich">
+<ui:composition template="/ee/template/upload.xhtml">
+	<ui:define name="title">steelTemp6--主页</ui:define>
+	<ui:define name="container">
+		<link rel="stylesheet" type="text/css" href="${facesContext.externalContext.requestContextPath}/css/companyShops/steelTemplate6.css" />
+		<script type="text/javascript" src="${facesContext.externalContext.requestContextPath}/js/companyShops/jquery.min.js"></script>
+		<script type="text/javascript" src="${facesContext.externalContext.requestContextPath}/js/companyShops/jquery-1.3.1.js"></script>
+		<script type="text/javascript" src="${facesContext.externalContext.requestContextPath}/js/companyShops/jquery.cookie.js"></script>
+		<script type="text/javascript" src="${facesContext.externalContext.requestContextPath}/js/companyShops/ad.js"></script>
+		
+		<script type="text/javascript" src="${facesContext.externalContext.requestContextPath}/js/companyShops/steelTemplate6.js"></script>
+		
+		
+		<!--nav js-->
+		<!--<script language="javascript" >
+				$(document).ready(function() {
+		
+					/* 	1st example	*/
+		
+					/// wrap inner content of each anchor with first layer and append background layer
+					$("#menu li a").wrapInner( '<span class="out"></span>' ).append( '<span class="bg"></span>' );
+		
+					// loop each anchor and add copy of text content
+					$("#menu li a").each(function() {
+						$( '<span class="over">' +  $(this).text() + '</span>' ).appendTo( this );
+					});
+		
+					$("#menu li a").hover(function() {
+						// this function is fired when the mouse is moved over
+						$(".out",	this).stop().animate({'top':	'45px'},	250); // move down - hide
+						$(".over",	this).stop().animate({'top':	'0px'},		250); // move down - show
+						$(".bg",	this).stop().animate({'top':	'0px'},		120); // move down - show
+		
+					}, function() {
+						// this function is fired when the mouse is moved off
+						$(".out",	this).stop().animate({'top':	'0px'},		250); // move up - show
+						$(".over",	this).stop().animate({'top':	'-45px'},	250); // move up - hide
+						$(".bg",	this).stop().animate({'top':	'-45px'},	120); // move up - hide
+					});
+							
+		
+					/*	2nd example	*/
+					
+					$("#menu2 li a").wrapInner( '<span class="out"></span>' );
+					
+					$("#menu2 li a").each(function() {
+						$( '<span class="over">' +  $(this).text() + '</span>' ).appendTo( this );
+					});
+		
+					$("#menu2 li a").hover(function() {
+						$(".out",	this).stop().animate({'top':	'45px'},	200); // move down - hide
+						$(".over",	this).stop().animate({'top':	'0px'},		200); // move down - show
+		
+					}, function() {
+						$(".out",	this).stop().animate({'top':	'0px'},		200); // move up - show
+						$(".over",	this).stop().animate({'top':	'-45px'},	200); // move up - hide
+					});
+		
+				});
+		
+			</script>-->
+
+			<!-- 图片跑马灯 脚本 --> 
+			<script type="text/javascript" language="javascript">
+					//<![CDATA[
+						window.onload=function(){
+							function getElement(id){
+								return document.getElementById(id);
+							}
+					
+							var speed=30;//滚动速度
+							var demo=getElement("demo");
+							var demo2=getElement("demo2");
+							var demo1=getElement("demo1");
+							demo2.innerHTML=demo1.innerHTML //复制demo1中的图片到demo2中
+							
+							function Marqueeleft(){//向左滚动
+								if( demo2.offsetWidth-demo.scrollLeft<=0)
+									demo.scrollLeft-=demo1.offsetWidth
+								else
+									demo.scrollLeft++
+							}
+							
+							function Marqueeright(){//向右滚动
+								if( demo2.offsetWidth-demo.scrollLeft>=565)
+									demo.scrollLeft+=demo1.offsetWidth
+								else
+									demo.scrollLeft
+							}
+						
+							var MyMar=setInterval(Marqueeleft,speed)//自动开始滚动
+							Direction='Left';//设定初始方向为向左滚
+							demo.onmouseover=function() {clearInterval(MyMar)}
+							demo.onmouseout=function() {
+								if(Direction=='Left'){
+									MyMar=setInterval(Marqueeleft,speed)
+								}else if(Direction=='Right'){
+									MyMar=setInterval(Marqueeright,speed)
+								}
+							};
+							
+							getElement('left').onclick=function(){
+								clearInterval(MyMar);
+								MyMar=setInterval(Marqueeleft,speed)
+								Direction='Left';
+							};
+							getElement('left').onmouseover=function(){
+								this.style.opacity=0.3;
+								this.style.filter='alpha(opacity=30)';
+							}	
+							getElement('left').onmouseout=function(){
+								this.style.opacity=0.05;
+								this.style.filter='alpha(opacity=5)';
+							}
+						
+							getElement('right').onclick=function(){
+								clearInterval(MyMar);
+								MyMar=setInterval(Marqueeright,speed)
+								Direction='Right';
+							};
+							getElement('right').onmouseover=function(){
+								this.style.opacity=0.3;
+								this.style.filter='alpha(opacity=30)';
+							}	
+							getElement('right').onmouseout=function(){
+								this.style.opacity=0.05;
+								this.style.filter='alpha(opacity=5)';
+							}
+						}
+				//]]>
+			</script>
+
+		<div class="content">
+			<ui:include src="/ee/companyShops/steelTemplate6/header.xhtml" />
+			<div class="index_page">
+				<div id="index_left">
+					<!--首页图片切换-->
+					<div class="content_right">
+						<div class="ad" >
+							<ul class="slider" >
+								<li><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate6/b1.jpg"/></li>
+								<li><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate6/b2.jpg"/></li>
+								<li><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate6/b3.jpg"/></li>
+								<li><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate6/b4.jpg"/></li>
+								<li><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate6/b5.jpg"/></li>
+							</ul>
+							<ul class="num" >
+								<li>1</li>
+								<li>2</li>
+								<li>3</li>
+								<li>4</li>
+								<li>5</li>
+							</ul>
+						</div>
+					</div>
+					<!--<div id="banner">
+						<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate6/banner.jpg" alt="" width="593" height="194" />
+					</div>-->
+
+					<!--公司简介-->
+					<div id="intro" style="clear: both; position: static;">
+						<p class="paoti">关于我们</p>
+						<p
+							style="padding: 10px 10px 0px 10px; float: right; line-height: 200%;">
+							<img
+								src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate6/1im1.jpg"
+								alt="" width="67" height="111" class="home_img" />
+							汉达精密科技股份有限公司成立于1999 年，为神达计算机机构的一员。
+							汉达精密在机构行业拥有多年丰富经>验，是业内享负盛名的机构件供货商，汉达精密所经销的机构件主要应用在4C1M －
+							即消费性电子产品(Consumer electronics) 、计算机产品 (Computer) 、通讯产品
+							(Communication)、汽车产品 (Car) 及移动电话 (Mobile) 范畴。
+						</p>
+						<p style="text-align: right; padding-right: 30px;"><a href="${facesContext.externalContext.requestContextPath}/ee/companyShops/steelTemplate6/companyIntro.xhtml">more…</a></p>
+					</div>
+
+					<!--产品展示-->
+					<div style="width: 100%; float: left; margin-top: 20px;">
+						<div class="pagetitle" style="width: 97%;">
+							<h5>
+								<span style="float: left;">产品展示</span>
+							</h5>
+						</div>
+						<div style="clear: both;"></div>
+						<!--图片跑马灯-->
+						<div id="outer">
+							<a href="#" hidefocus="" id="left"><img
+								src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate6/Left.png" />
+							</a>
+							<div id="demo">
+								<table width="995px" border="0" cellpadding="0"
+									bgcolor="#FFFFFF">
+									<tbody>
+										<tr>
+											<td id="demo1" valign="top">
+												<table border="0" align="center" cellpadding="0"
+													cellspacing="0">
+													<tbody>
+														<tr valign="top">
+															<td align="center">
+																<div>
+																	<a href="#" class="listname">
+																		<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate6/pr1.jpg" class="listimage" />模具钢材
+																	</a>
+																</div>
+															</td>
+															<td align="center">
+																<div>
+																	<a href="#" class="listname">
+																		<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate6/pr2.jpg" class="listimage" />模具钢材
+																	</a>
+																</div
+															></td>
+															<td align="center">
+																<div>
+																	<a href="#" class="listname">
+																		<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate6/pr3.jpg" class="listimage" />模具钢材
+																	</a>
+																</div>
+															</td>
+															<td align="center">
+																<div>
+																	<a href="#" class="listname">
+																		<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate6/pr4.jpg" class="listimage" />模具钢材
+																	</a>
+																</div>
+															</td>
+															<td align="center">
+																<div>
+																	<a href="#" class="listname">
+																		<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate6/pr2.jpg" class="listimage" />模具钢材
+																	</a>
+																</div>
+															</td>
+														</tr>
+													</tbody>
+												</table></td>
+
+											<td id="demo2" valign="top">
+												<table border="0" align="center" cellpadding="0"
+													cellspacing="0">
+													<tbody>
+														<tr valign="top">
+															<td align="center">
+																<div>
+																	<a href="#" class="listname"> 
+																		<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate6/pr1.jpg" class="listimage" />模具钢材 
+																	</a>
+																</div>
+															</td>
+															<td align="center">
+																<div>
+																	<a href="#" class="listname"> 
+																		<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate6/pr2.jpg" class="listimage" />模具钢材 
+																	</a>
+																</div>
+															</td>
+															<td align="center">
+																<div>
+																	<a href="#" class="listname"> 
+																		<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate6/pr3.jpg" class="listimage" />模具钢材 
+																	</a>
+																</div>
+															</td>
+															<td align="center">
+																<div>
+																	<a href="#" class="listname">
+																		<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate6/pr4.jpg" class="listimage" />模具钢材 
+																	</a>
+																</div>
+															</td>
+															<td align="center">
+																<div>
+																	<a href="#" class="listname"> 
+																		<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate6/pr3.jpg" class="listimage" />模具钢材 
+																	</a>
+																</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<a href="#" hidefocus="" id="right">
+								<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate6/Right.png" />
+							</a>
+						</div>
+						<!--图片跑马灯 end-->
+					</div>
+				</div>
+				<!--page left end-->
+
+				<div id="index_right">
+					<!--新闻动态-->
+					<div class="right_box">
+						<p class="pagetitle_right">新闻动态</p>
+						<ul style="list-style: none; margin: 5px 15px; overflow: hidden;">
+							<li style="padding: 7px 10px;">行业新闻公司新闻标题</li>
+							<li style="padding: 7px 10px;">行业新闻公司新闻标题</li>
+							<li style="padding: 7px 10px;">行业新闻公司新闻标题</li>
+							<li style="padding: 7px 10px;">行业新闻公司新闻标题</li>
+							<li style="padding: 7px 10px;">行业新闻公司新闻标题</li>
+						</ul>
+					</div>
+
+					<!--联系我们-->
+					<div class="right_box">
+						<p class="pagetitle_right">联系我们</p>
+						<ul id="co_intro_right">
+							<li>
+								<div>
+									<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate6/phone.png" 	alt="" align="absmiddle" style="position: relative;" /> 
+									<span style="letter-spacing: 1px; font-size: 14px;">0512-5874587/5874586</span>
+								</div>
+							</li>
+							<li>
+								<div>
+									<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate6/forward.png" alt="" align="absmiddle" style="position: relative;" /> 
+									<span style="letter-spacing: 1px; font-size: 14px;"><a href="">service@mail.com</a></span>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<!--合作伙伴-->
+					<div class="right_box">
+						<p class="pagetitle_right">合作伙伴</p>
+						<ul id="co_intro_right">
+							<li>asdflkjasdlfkajsfaj;sdlfk</li>
+							<li>dfgkdlkgjdfgmal;hgv.c,bmcvx/</li>
+							<li>asdflkjasdlfkajsfaj;sdlfk</li>
+							<li>dfgkdlkgjdfgmal;hgv.c,bmcvx/</li>
+						</ul>
+						
+						<!--<div id="makewing">
+							<script type="text/javascript" src="powerpoint.js"></script>
+							<table width="315" border="0" cellpadding="0" cellspacing="0">
+								<tr>
+									<td height="40" >昆山欧镁龙金属有限公司</td>
+								</tr>
+								<tr>
+									<td height="40" >昆山欧镁龙金属有限公司</td>
+								</tr>
+								<tr>
+									<td height="40" >昆山欧镁龙金属有限公司</td>
+								</tr>
+								<tr>
+									<td height="40" >2</td>
+								</tr>
+
+							</table>
+						</div>-->
+					</div>
+				</div>
+				<!--page right end-->
+			</div>
+		</div>
+		<ui:include src="/ee/companyShops/steelTemplate6/footer.xhtml" />
+	</ui:define>
+</ui:composition>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:e="http://www.ejs.com/core"
+	xmlns:a="http://richfaces.org/a4j" xmlns:r="http://richfaces.org/rich">
+<ui:composition template="/ee/template/framework.xhtml">
+	<ui:define name="title">steelTemp2--资质认证</ui:define>
+	
+	<ui:define name="body">
+		<link rel="stylesheet" type="text/css" href="${facesContext.externalContext.requestContextPath}/css/companyShops/steelTemplate2.css" />
+		<link rel="stylesheet" type="text/css" href="${facesContext.externalContext.requestContextPath}/css/companyShops/steelTemplate2_img.css" />
+		
+		<script type="text/javascript" src="${facesContext.externalContext.requestContextPath}/js/companyShops/steelTemplate2/jquery-1.6.4.min.js"></script>
+		<script type="text/javascript" src="${facesContext.externalContext.requestContextPath}/js/companyShops/steelTemplate2/jquery.nivo.slider.js"></script>
+		<script type="text/javascript" src="${facesContext.externalContext.requestContextPath}/js/companyShops/steelTemplate2/cufon-yui.js"></script>
+		<script type="text/javascript" src="${facesContext.externalContext.requestContextPath}/js/companyShops/steelTemplate2/TitilliumText.font.js"></script>
+		<script type="text/javascript" src="${facesContext.externalContext.requestContextPath}/js/companyShops/steelTemplate2/scripts.js"></script>
+		<script type="text/javascript" src="${facesContext.externalContext.requestContextPath}/js/companyShops/steelTemplate2/custom.js"></script>
+		<script type="text/javascript" src="${facesContext.externalContext.requestContextPath}/js/companyShops/steelTemplate2/shortcode.js"></script>
+		<script type="text/javascript" src="${facesContext.externalContext.requestContextPath}/js/companyShops/steelTemplate2/swfobject.js"></script>
+		
+		<body class="home">
+			<!--Header-->
+			<div><ui:include  src="/ee/companyShops/steelTemplate2/header.xhtml" /></div>
+			<!--/Header end-->
+				
+			<!--Body content-->
+			<div class="full-width-wrapper">
+			  	<div class="fixed-width-wrapper" id="body-content">
+			    	<!--Content-->
+			    	<div id="content" class="fixed-width-wrapper">
+			      		<div class="header-text">
+			        		<ul id="breadcrumbs">
+								<li><a href="#" title="">主页</a></li>
+								<li class="current"><a href="#" title="">资质证书</a></li>
+							</ul>
+			        		<h1 class="first-word double-color sp"><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate2/certi.png" /></h1>
+			      		</div>
+			      <!--Full width-->
+			      <div class="post entry-content">
+			        <img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate2/prot2.png" alt="" width="326" height="162" class="align-left" />
+					<!--right-->
+					<div class="align-right">
+						<p>经营范围： 生产加工</p>
+						<p>注册机关： 昆山市工商行政管理局 </p>
+						<p>主营行业： 模具制造;热处理;模具材料;五金零件</p>
+						<p>电话： 0512-57367777</p>
+						<p>传真： 0512-9854758</p>
+						<p>邮政编码： 215345</p>
+					</div>
+					<!--/right end-->
+					<p>公司名称： 汉达精密电子(昆山)有限公司 </p>
+			        <p>公司简称： MPTK </p>
+			        <p>注册号 ： 1659845443558 </p>
+			        <p>注册地址： 江苏省昆山市长江南路出口加工区第二大道269号 </p>
+			        <p>注册资本： 人民币2445.0万元 法人代表：</p>
+			        <p>企业类型： 外资企业 </p>
+			        <p>成立时间： 2002-01-28 </p>
+			        <p>经营期限： 自 2002-01-28至2052-01-27 </p>
+			        
+					
+			        <h3 class="piaoti">企业身份认证</h3>
+					<p>2012年03月10日通过认证；    通过第三方认证公司，对企业合法性，真实性的核实及申请人是否隶属该企业且经过企业授权的查证。</p>
+			        
+			      </div>
+			      <!--/Full width-->
+			    </div>
+			    <!--/Content-->
+
+			  </div>
+
+				<!--Get in touch-->
+				<div id="get-in-touch" class="fixed-width-wrapper">
+					<div class="via-phone-number float-left">
+						<a class="icon sprite float-left" title="Keep in touch with us">Keep
+							in touch with us</a>
+						<h2>
+							<strong>欢迎来电咨询</strong><strong style="color: #ff7300;">
+								400-678-0626</strong>
+						</h2>
+						<span>我们致力为客户带来更好的服务！</span>
+					</div>
+					<div class="via-email float-right">
+						<img
+							src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate2/service.png" />
+					</div>
+				</div>
+				<!--/Get in touch-->
+
+			</div>
+			<!--/Body end-->
+			
+			 
+			<!--Bottom start-->
+			<div><ui:include src="/ee/companyShops/steelTemplate2/footer.xhtml" /></div>
+			<!--Bottom end-->	
+		</body>
+
+	</ui:define>
+</ui:composition>
+</html>

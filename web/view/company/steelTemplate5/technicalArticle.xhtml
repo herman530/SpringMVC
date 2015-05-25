@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:e="http://www.ejs.com/core"
+	xmlns:a="http://richfaces.org/a4j" xmlns:r="http://richfaces.org/rich">
+<ui:composition template="/ee/template/framework.xhtml">
+	<ui:define name="title">steelTemp5--技术文章</ui:define>
+	
+	<ui:define name="body">
+		<link rel="stylesheet" type="text/css" href="${facesContext.externalContext.requestContextPath}/css/companyShops/steelTemplate5.css" />
+		
+		<div class="container">
+			<!--heard -->
+			<div><ui:include  src="/ee/companyShops/steelTemplate5/header.xhtml" /></div>
+					
+		
+		<div class="mainWarp">
+		  	<div style="width:100%;  margin-bottom:20px; height:95px; ">
+				<div class="topimg">
+					<a href="product.html">
+						<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/prod_big1.gif" style="padding:15px 0 0 10px;" border="0" />
+					</a>
+					<div class="topfont" style=" position:absolute; left: 100px; top: 227px;">
+					  	<div align="left"><a href="product.html">模具钢系列</a></div>
+					</div>
+				</div>
+				<div class="topimg mleft">
+					<a href="#">
+						<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/prod_big2.gif" style="padding:15px 0 0 10px;" />
+					</a>
+					<div class="topfont" style=" position:absolute; left: 297px; top: 227px;">
+					  	<div align="left">特钢系列</div>
+					</div>
+				</div>
+				<div class="topimg mleft">
+					<a href="#">
+						<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/prod_big3.gif" style="padding:15px 0 0 10px;" />
+					</a>
+					<div class="topfont" style=" position:absolute; left: 503px; top: 226px;">
+					  <div align="left">不锈钢系列</div>
+					</div>
+				</div>
+				<div class="topimg mleft">
+					<a href="#">
+						<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/prod_big4.gif" style="padding:15px 0 0 10px;" />
+					</a>
+					<div class="topfont" style=" position:absolute; left: 705px; top: 227px;">
+					  <div align="left">铝材系列</div>
+					</div>
+				</div>
+				<div class="topimg mleft">
+					<a href="#">
+						<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/prod_big5.gif" style="padding:15px 0 0 10px;" />
+					</a>
+					<div class="topfont" style=" position:absolute; left: 908px; top: 225px;">
+					  <div align="left">粉末钢系列</div>
+					</div>
+				</div>
+			</div>
+		  	
+			
+			<DIV class="casemain" >
+				<div class="introd_head piaoti" ><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/pao6.png" width="123" height="27" /></div>
+				<div style="margin:25px 0 30px 70px; width:280px; float:left; line-height:35px;" >
+					<table width="230" border="0" cellspacing="0" cellpadding="0">
+			            <tr><td><a href="${facesContext.externalContext.requestContextPath}/ee/companyShops/steelTemplate5/technicalArticle_1.xhtml">关于拉伸类模具表面拉伤问题与处理方法</a> </td></tr>
+			            <tr><td>模具钢球化退火</td></tr>
+			            <tr><td><a href="case_three.html"></a> 压铸模H13模具钢的淬火工艺</td></tr>
+			            <tr><td>钢的表面热处理</td></tr>
+			            <tr><td>产品应用案例</td></tr>
+			            <tr><td>产品应用案例</td></tr>
+						<tr><td>产品应用案例</td></tr>
+			            <tr><td>产品应用案例</td></tr>
+			            <tr><td>产品应用案例</td></tr>
+		          	</table>
+				</div>
+				<div style="margin:20px 50px 30px 0; width:500px; float:right;" ><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/arti_bg.png" width="500" height="400" /></div>
+		  </DIV>
+		  <!--case end-->
+	  </div>
+	</div>
+		
+	<div><ui:include src="/ee/companyShops/steelTemplate5/footer.xhtml" /></div>
+
+	</ui:define>
+</ui:composition>
+</html>

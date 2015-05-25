@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:e="http://www.ejs.com/core"
+	xmlns:a="http://richfaces.org/a4j" xmlns:r="http://richfaces.org/rich">
+<ui:composition template="/ee/template/blank.xhtml">
+	<ui:define name="content">
+	<link rel="stylesheet" type="text/css" href="${facesContext.externalContext.requestContextPath}/css/siteShops/steelTemplate1/styles.css" />
+		<div id="header">
+			<div id="top-header">
+				<div id="company-logo">
+					<h1><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate1/logo.png" /></h1>
+				</div>
+				<ul id="main-navigation">
+					<li class="active"><a href="${facesContext.externalContext.requestContextPath}/ee/companyShops/steelTemplate1/body.xhtml">主页</a></li>
+					<li><a href="${facesContext.externalContext.requestContextPath}/ee/companyShops/steelTemplate1/companyIntro.xhtml">关于我们</a></li>
+					<li><a href="${facesContext.externalContext.requestContextPath}/ee/companyShops/steelTemplate1/salesInfo.xhtml">供应产品</a></li>
+					<li><a href="${facesContext.externalContext.requestContextPath}/ee/companyShops/steelTemplate1/businessInfo.xhtml">采购信息</a></li>
+					<li><a href="${facesContext.externalContext.requestContextPath}/ee/companyShops/steelTemplate1/successfulCase.xhtml">应用案例</a></li>
+					<li><a href="${facesContext.externalContext.requestContextPath}/ee/companyShops/steelTemplate1/technicalArticle.xhtml" >技术文章</a></li>
+					<li><a href="${facesContext.externalContext.requestContextPath}/ee/companyShops/steelTemplate1/contact.xhtml" class="last">联系我们</a></li>
+		  	 	</ul>
+			    <div class="clear"></div>
+			</div>
+		</div>
+	</ui:define>
+</ui:composition>
+</html>

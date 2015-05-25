@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:e="http://www.ejs.com/core"
+	xmlns:a="http://richfaces.org/a4j" xmlns:r="http://richfaces.org/rich">
+<ui:composition template="/ee/template/framework.xhtml">
+	<ui:define name="title">steelTemp4--成功案例</ui:define>
+	
+	<ui:define name="body">
+		<link rel="stylesheet" type="text/css" href="${facesContext.externalContext.requestContextPath}/css/companyShops/steelTemplate4.css" />
+
+		<div id="page">
+			<!-- header -->
+			<div><ui:include  src="/ee/companyShops/steelTemplate4/header.xhtml" /></div>
+			
+			<!--main banner-->
+			<div id="other_banner" align="center"><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/gif.gif" width="1000" height="170" /></div>
+		  	
+		  	<!-- 中间主体-->
+		  	<div>
+			  	<!-- 产品列表 -->
+				<div id="about_left">
+					<div class="fenle">产品中心</div>
+					<ul id="left_list">
+						<li>冷作模具钢</li>
+						<li>热作模具钢</li>
+						<li>塑料模具钢</li>
+						<li>塑胶模具钢</li>
+						<li>铝材</li>
+						<li>粉末钢</li>
+						<li>其它钢材 </li>				
+					</ul>
+				</div>
+		
+				<!-- 右边模块-->	
+				<div id="about_right">
+					<div  class="word_p">
+						<P class="word_head">笔记本电脑后盖（40%玻纤）</P>
+						<p>之前所用钢材：W.Nr.1.2363, 硬化至60 HRC</p>
+            			<p>使用后效果：模具出现开裂。</p>
+            			<p>模具制造：采用TOOLOX44一方面可以节约时间，另一方面也避免了长零件热处理的麻烦并简化了最后的调整步骤。模具加工顺利，制作阶段至少节约了3天时间。</p>
+      					<p>现状：模具于2001年投入使用，在生产了150,000件产品后对模具进行了检查，没有明显的磨损，尺寸精度依然很好，一直用到2007年初，这套模具估计己生产2,000,000多件产品。</p>       
+						<p  style="float:right;"><a	href="${facesContext.externalContext.requestContextPath}/ee/companyShops/steelTemplate4/successfulCase.xhtml" >返回</a></p>		
+					</div>
+					<div style="height:30px; clear:both"></div>		 
+				</div>
+			</div>
+			
+			<!-- footer-->
+			<div id="footer" ><ui:include src="/ee/companyShops/steelTemplate4/footer.xhtml" /></div>
+		</div>
+	</ui:define>
+</ui:composition>
+</html>

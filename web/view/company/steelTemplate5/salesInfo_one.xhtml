@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:e="http://www.ejs.com/core"
+	xmlns:a="http://richfaces.org/a4j" xmlns:r="http://richfaces.org/rich">
+<ui:composition template="/ee/template/framework.xhtml">
+	<ui:define name="title">steelTemp5--产品中心</ui:define>
+	
+	<ui:define name="body">
+		<link rel="stylesheet" type="text/css" href="${facesContext.externalContext.requestContextPath}/css/companyShops/steelTemplate5.css" />
+		
+		<div class="container">
+			<!--heard -->
+			<div><ui:include  src="/ee/companyShops/steelTemplate5/header.xhtml" /></div>
+					
+		
+		<div class="mainWarp">
+			<DIV style="background:#f4f4f4; border:1px #cccccc solid; width:620px; float:left; height:auto; ">
+				<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/img1.jpg" width="590" height="600" style="padding:15px;"/>	
+			</DIV>
+			<!--产品展示 end-->
+			
+			<div style="background:#e0e0e0; border:1px #BBBBBB solid; width:355px; float:right; height:150px; margin-bottom:15px;">
+				<div style="background:#434343; width:100%; height:35px; ">
+					<div><span style="color:#FFFFFF; line-height:35px; text-align:left; font-size:16px; font-family:'微软雅黑'; 
+					vertical-align:middle; padding-left:20px; ">产品说明</span>				</div>
+					<div style="background:#e0e0e0; height:100px;  padding:15px 0 0 20px; font-family:'微软雅黑'; font-size:15px; line-height:200%;">
+					  <p>一胜百618HH</p>
+					  <p>品牌：大同制钢</p>
+					  <p>原产地：日本</p>
+					  <p>&nbsp;	</p>
+					</div>
+				</div>	
+			</div>
+			
+			<div class="product">
+					<div class="product_font">
+					  <p>化学成份</p>
+					  <table width="318" height="77" border="0" cellpadding="0" cellspacing="0">
+						  <tr>
+							<td width="59" align="center" class="table_border" >C</td>
+							<td width="55" align="center" class="table_border" >Si</td>
+							<td width="52" align="center" class="table_border" >Mn</td>
+							<td width="47" align="center" class="table_border" >Cr</td>
+							<td width="54" align="center" class="table_border" >Mo</td>
+							<td width="51" align="center" style="border-bottom:solid 1px #999999; " >V</td>
+						  </tr>
+						  <tr>
+							<td align="center" style="border-right:solid 1px #999999;">0.38</td>
+							<td align="center" style="border-right:solid 1px #999999;">1.4</td>
+							<td align="center" style="border-right:solid 1px #999999;">1.4</td>
+							<td align="center" style="border-right:solid 1px #999999;">4.9</td>
+							<td align="center" style="border-right:solid 1px #999999;">1.2</td>
+							<td align="center">1.1</td>
+						  </tr>
+					  </table>		
+				</div>		
+			</div>
+			
+			<div class="product_p" >
+					<div class="product_p1">
+					  <p>产品特点</p>
+					  <p>1.良好的抛光性几江蚀刻花性能</p>
+					  <p>2.加工性能良好</p>
+					  <p>3.高纯净优良的均一性</p>
+					  <p>4.耐磨性更好，模具寿命更长。</p>
+			  </div>		
+			</div>
+			
+			<div class="product_p">
+					<div  class="product_p1">
+					  <p>产品用途</p>
+					  <p>1.大型长寿命塑胶注塑模，如家电制品，电脑外壳等模具</p>
+					  <p>2.热塑性塑胶的挤压模具。</p>
+					  <p>3.吹塑模具，成型工具，结构零件。</p>
+					  <p>4.热煅模具。</p>
+					</div>		
+			</div>
+			<!--right  end-->
+		</div>
+	</div>
+		
+	<div><ui:include src="/ee/companyShops/steelTemplate5/footer.xhtml" /></div>
+
+	</ui:define>
+</ui:composition>
+</html>

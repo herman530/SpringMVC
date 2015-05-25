@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:e="http://www.ejs.com/core" xmlns:a="http://richfaces.org/a4j"
+	xmlns:r="http://richfaces.org/rich">
+<ui:composition template="/ee/template/framework.xhtml">
+	<ui:define name="title">steelTemp6--联系我们</ui:define>
+
+	<ui:define name="body">
+		<link rel="stylesheet" type="text/css" href="${facesContext.externalContext.requestContextPath}/css/companyShops/steelTemplate6.css" />
+		<script type="text/javascript" src="${facesContext.externalContext.requestContextPath}/js/companyShops/jquery.min.js"></script>
+		<script type="text/javascript" src="${facesContext.externalContext.requestContextPath}/js/companyShops/steelTemplate6.js"></script>
+		
+
+		<div class="content">
+			<div id="center">
+				<!--heard -->
+				<div>
+					<ui:include src="/ee/companyShops/steelTemplate6/header.xhtml" />
+				</div>
+
+				<div id="center">
+					<div id="contact" >
+						<div style="height: 10px;"></div>
+						<div class="pagetitle">
+							<h5>
+								<span style="float: left;">联系我们</span>
+							</h5>
+						</div>
+						<div style="height: 10px; clear: none;"></div>
+						<div align="center" class="contact_p" >
+							<p style="text-indent: 20px; padding: 0px 20px; line-height: 200%;">
+								咨询或订购产品，请致电、传真或者电邮给敝司。我们将会尽快的回复。若阁下找不到所需的货物，请给予敝司产品的资料，或许我们将帮你把困难解决。
+							</p>
+							<!--Contact form-->
+							<form method="post" action="#" id="contact-form"  class="maxx-form">
+								<div class="form-row">
+									<label class="form-row-label">姓名:<span class="star">*</span></label> 
+									<input class="input-field required" style="width: 400px" type="text" name="name" />
+								</div>
+								<div class="form-row">
+									<label class="form-row-label">邮箱:<span class="star">*</span></label> 
+									<input class="input-field required email" style="width: 400px" type="text" name="email" />
+								</div>
+								<div class="form-row">
+									<label class="form-row-label">主题:<span class="star">*</span></label>
+									<input class="input-field required" style="width: 400px" type="text" name="subject" />
+								</div>
+								<div class="form-row">
+									<label class="form-row-label">留言:<span class="star">*</span></label>
+									<textarea class="input-field required" style="width: 400px" name="message" rows="5" cols="1"></textarea>
+								</div>
+								<div class="form-row">
+									<label class="form-row-label"></label>
+									<button type="submit" class="black border-radius-3px bold submit" title="">发送信息</button>
+								</div>
+							</form>
+							<!--/Contact form-->
+						</div>
+						<!--联系方式-->
+						<div id="contact_minpan" >
+							<p style="margin: 0 auto; font-size: 15px; font-family: '微软雅黑'; letter-spacing: 2px; font-weight: bold;">我们的联系方式</p>
+							<div class="minpan_p" >
+								<p>地址：中国江苏省昆山市综合保税区xx路xx号</p>
+								<p>电话：400-256-5487</p>
+								<p>传真：+86-0512-5698547</p>
+								<p>邮编：452000</p>
+								<p>邮箱：service@mail.com</p>
+								<p>网址：www.moldfusteel.com</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</ui:define>
+
+
+	<ui:define name="footer">
+		<div>
+			<ui:include src="/ee/companyShops/steelTemplate6/footer.xhtml" />
+		</div>
+	</ui:define>
+
+</ui:composition>
+</html>

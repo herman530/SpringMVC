@@ -1,0 +1,381 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:e="http://www.ejs.com/core"
+	xmlns:a="http://richfaces.org/a4j" xmlns:r="http://richfaces.org/rich">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<ui:composition template="/ee/template/framework.xhtml">
+	<ui:define name="title">steelTemp4--主页</ui:define>
+	
+	<ui:define name="body">
+		<link rel="stylesheet" type="text/css" href="${facesContext.externalContext.requestContextPath}/css/companyShops/steelTemplate4.css" />
+		<script type="text/javascript">
+			function setTab03Syn ( i )
+			{
+				selectTab03Syn(i);
+			}
+			function selectTab03Syn ( i )
+			{
+				switch(i){
+					case 1:
+					document.getElementById("TabTab03Con1").style.display="block";
+					document.getElementById("TabTab03Con2").style.display="none";
+					document.getElementById("TabTab03Con3").style.display="none";
+					document.getElementById("font1").style.color="red";
+					document.getElementById("font2").style.color="#F2F2F2";
+					document.getElementById("font3").style.color="#F2F2F2";
+					break;
+					case 2:
+					document.getElementById("TabTab03Con1").style.display="none";
+					document.getElementById("TabTab03Con2").style.display="block";
+					document.getElementById("TabTab03Con3").style.display="none";
+					document.getElementById("font1").style.color="#F2F2F2";
+					document.getElementById("font2").style.color="red";
+					document.getElementById("font3").style.color="#F2F2F2";
+					break;
+					case 3:
+					document.getElementById("TabTab03Con1").style.display="none";
+					document.getElementById("TabTab03Con2").style.display="none";
+					document.getElementById("TabTab03Con3").style.display="block";
+					document.getElementById("font1").style.color="#F2F2F2";
+					document.getElementById("font2").style.color="#F2F2F2";
+					document.getElementById("font3").style.color="red";
+					break;
+				}
+			}
+		</script>
+		
+		<!-- 图片跑马灯 脚本-->
+		<script type="text/javascript" language="javascript">
+		//<![CDATA[
+			window.onload=function(){
+				function getElement(id){
+					return document.getElementById(id);
+				}
+		
+				var speed=30;//滚动速度
+				var demo=getElement("demo");
+				var demo2=getElement("demo2");
+				var demo1=getElement("demo1");
+				demo2.innerHTML=demo1.innerHTML //复制demo1中的图片到demo2中
+				
+				function Marqueeleft(){//向左滚动
+					if( demo2.offsetWidth-demo.scrollLeft<=0)
+						demo.scrollLeft-=demo1.offsetWidth
+					else
+						demo.scrollLeft++
+				}
+				
+				function Marqueeright(){//向右滚动
+					if( demo2.offsetWidth-demo.scrollLeft>=565)
+						demo.scrollLeft+=demo1.offsetWidth
+					else
+						demo.scrollLeft--
+				}
+			
+				var MyMar=setInterval(Marqueeleft,speed)//自动开始滚动
+				Direction='Left';//设定初始方向为向左滚
+				demo.onmouseover=function() {clearInterval(MyMar)}
+				demo.onmouseout=function() {
+					if(Direction=='Left'){
+						MyMar=setInterval(Marqueeleft,speed)
+					}else if(Direction=='Right'){
+						MyMar=setInterval(Marqueeright,speed)
+					}
+				};
+				
+				getElement('left').onclick=function(){
+					clearInterval(MyMar);
+					MyMar=setInterval(Marqueeleft,speed)
+					Direction='Left';
+				};
+				getElement('left').onmouseover=function(){
+					this.style.opacity=0.3;
+					this.style.filter='alpha(opacity=30)';
+				}	
+				getElement('left').onmouseout=function(){
+					this.style.opacity=0.05;
+					this.style.filter='alpha(opacity=5)';
+				}
+			
+				getElement('right').onclick=function(){
+					clearInterval(MyMar);
+					MyMar=setInterval(Marqueeright,speed)
+					Direction='Right';
+				};
+				getElement('right').onmouseover=function(){
+					this.style.opacity=0.3;
+					this.style.filter='alpha(opacity=30)';
+				}	
+				getElement('right').onmouseout=function(){
+					this.style.opacity=0.05;
+					this.style.filter='alpha(opacity=5)';
+				}
+			}
+			//]]>
+		</script>
+
+		<div id="page">
+			<!-- header -->
+			<div><ui:include  src="/ee/companyShops/steelTemplate4/header.xhtml" /></div>
+			
+			<!--main banner-->
+			<div id="main_banner" align="center"><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/main_img.jpg" align="bottom" /></div>
+		
+			<!-- tab 标签-->
+			<div class="tab">
+				<div id="bg" class="xixi1">
+					<div id="font1" class="tab1 tabfont" onMouseOver="setTab03Syn(1);document.getElementById('bg').className='xixi1'">+企业简介</div>
+					<div id="font2" class="tab2 tabfont" onMouseOver="setTab03Syn(2);document.getElementById('bg').className='xixi2'">+产品展示</div>
+					<div id="font3" class="tab3 tabfont" onMouseOver="setTab03Syn(3);document.getElementById('bg').className='xixi3'">+客户服务</div>
+				</div>
+				
+				<!-- tab1企业简介 -->
+				<div id="TabTab03Con1">
+					<div style="width:330px; float:left; ">
+						<div class="tab_head">-公司简介</div>
+						<div class="tab_font">
+							<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/chart.png" width="64" height="64" style="float:left;" />GRS金属材料有限公司成立于 1999 年，为神达计算机机构的一员。 GRS金属在机构行业拥有多年丰富经验，是业内享负盛名的机构件供货商，GRS金属所经销的机构件主要应用在4C1M － 即消费性电子产品、计算机产品、通讯产品、汽车产品及移动电话范畴。		   	
+							<a href="about.html" >more~</a>
+						</div>			
+					</div>
+					
+					<div style="width:330px; float:left; ">
+						<div class="tab_head">-新闻资讯</div>
+						<div class="tebone_list">
+							<ul>
+								<li><a href="#">汉达越南厂启用 将导入PCB</a></li>
+								<li><a href="#">GRS金属获得70%订单 成为 PSP 最大底盘供应商</a></li>
+								<li><a href="#">GRS金属将为索尼制造PSP游戏机外壳</a></li>
+								<li><a href="#">大企业大集团引领风潮 改变四川电子产业生态</a></li>
+								<li><a href="#">GRS金属获得70%订单</a></li>
+							</ul>
+						</div>			
+					</div>		
+				
+					<div style="width:330px; float:left; ">
+						<div class="tab_head">-联系方式</div>
+						<div style="text-align: center; padding: 2px 0 0 8px"><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/phone.png" /></div>
+						<div class="tebone_list2">
+							<ul>
+								<li><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/ico1.png" width="10" height="12" /> 地址：昆山市综合保税区第二大道269号</li>
+								<li><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/ico1.png" width="10" height="12" /> 华东销售热线：0512-9874512</li>
+								<li><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/ico1.png" width="10" height="12" /> 华南销售热线：0795-8547125</li>
+								<li><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/ico1.png" width="10" height="12" /> 邮箱：service@mail.com</li>
+							</ul>
+						</div>				
+					</div>		
+				</div>
+			
+				<!-- tab2产品展示-->
+				<div id="TabTab03Con2" style="display:none">
+					
+					<!--图片跑马灯-->
+					<div id="outer">
+						<a href="#" id="left"><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/Left.png" /></a>
+						<div id="demo">
+							<table width="995px" border="0" cellpadding="0">
+								<tbody>
+									<tr>
+										<td id="demo1" valign="top">
+											<table border="0" align="center" cellpadding="0"
+												cellspacing="0">
+												<tbody>
+													<tr valign="top">
+														<td align="center">
+															<div>
+																<a href="#" class="listname">
+																	<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/product_1.jpg" class="listimage" />模具钢材
+																</a>
+															</div></td>
+														<td align="center">
+															<div>
+																<a href="#" class="listname">
+																	<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/product_2.jpg" class="listimage" />模具钢材
+																</a>
+															</div></td>
+														<td align="center">
+															<div>
+																<a href="#" class="listname">
+																	<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/product_3.jpg" class="listimage" />模具钢材
+																</a>
+															</div></td>
+														<td align="center">
+															<div>
+																<a href="#" class="listname">
+																	<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/product_4.jpg" class="listimage" />模具钢材
+																</a>
+															</div></td>
+														<td align="center">
+															<div>
+																<a href="#" class="listname">
+																	<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/product_5.jpg" class="listimage" />模具钢材
+																</a>
+															</div></td>
+														<td align="center">
+															<div>
+																<a href="#" class="listname">
+																	<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/product_1.jpg" class="listimage" />模具钢材
+																</a>
+															</div></td>
+														<td align="center">
+															<div>
+																<a href="#" class="listname">
+																	<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/product_2.jpg" class="listimage" />模具钢材
+																</a>
+															</div></td>
+														<td align="center">
+															<div>
+																<a href="#" class="listname">
+																	<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/product_3.jpg" class="listimage" />模具钢材
+																</a>
+															</div></td>
+													</tr>
+												</tbody>
+											</table></td>
+
+										<td id="demo2" valign="top">
+											<table border="0" align="center" cellpadding="0"
+												cellspacing="0">
+												<tbody>
+													<tr valign="top">
+														<td align="center">
+															<div>
+																<a href="#" class="listname"> 
+																	<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/product_1.jpg" class="listimage" />模具钢材
+																</a>
+															</div></td>
+														<td align="center">
+															<div>
+																<a href="#" class="listname"> 
+																	<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/product_2.jpg" class="listimage" />模具钢材
+																</a>
+															</div></td>
+														<td align="center">
+															<div>
+																<a href="#" class="listname"> 
+																	<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/product_3.jpg" class="listimage" />模具钢材
+																</a>
+															</div></td>
+														<td align="center">
+															<div>
+																<a href="#" class="listname"> 
+																	<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/product_4.jpg" class="listimage" />模具钢材
+																</a>
+															</div></td>
+														<td align="center">
+															<div>
+																<a href="#" class="listname">
+																	<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/product_5.jpg" class="listimage" />模具钢材
+																</a>
+															</div></td>
+														<td align="center">
+															<div>
+																<a href="#" class="listname"> 
+																	<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/product_1.jpg" class="listimage" />模具钢材
+																</a>
+															</div></td>
+														<td align="center">
+															<div>
+																<a href="#" class="listname"> 
+																	<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/product_1.jpg" class="listimage" />模具钢材
+																</a>
+															</div></td>
+														<td align="center">
+															<div>
+																<a href="#" class="listname"> 
+																	<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/product_1.jpg" class="listimage" />模具钢材
+																</a>
+															</div>
+														</td>
+													</tr>
+												</tbody>
+											</table></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<a href="#" hidefocus="" id="right"><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/Right.png" /></a>
+					</div>
+					<!--图片跑马灯 end-->
+
+					<!--<DIV align="center" >
+						<DIV class="feature" id="my-glider">
+							<DIV class="scroller">
+								<DIV class="content">
+									<DIV class="section" id="section1">
+										<A href="prot.html" target="_blank"><IMG alt="" src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/product_1.jpg" title="abcd冷作模具钢"/></A>
+										<A href="prot.html" target="_blank"><IMG alt="" src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/product_2.jpg" title="abcd冷作模具钢"/></A>
+										<A href="prot.html" target="_blank"><IMG alt="" src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/product_3.jpg" title="abcd冷作模具钢"/></A>
+										<A href="prot.html" target="_blank"><IMG alt="" src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/product_4.jpg" title="abcd冷作模具钢"/></A>
+										<A href="prot.html" target="_blank"><IMG alt="" src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/product_5.jpg" title="abcd冷作模具钢"/></A>
+									</DIV>
+							
+									<DIV class="section" id="section2">
+										<A href="prot.html" target="_blank"><IMG alt="" src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/product_5.jpg" title="abcd冷作模具钢"/></A>
+										<A href="prot.html" target="_blank"><IMG alt="" src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/product_4.jpg" title="abcd冷作模具钢"/></A>
+										<A href="prot.html" target="_blank"><IMG alt="" src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/product_3.jpg" title="abcd冷作模具钢"/></A>
+										<A href="prot.html" target="_blank"><IMG alt="" src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/product_2.jpg" title="abcd冷作模具钢"/></A>
+										<A href="prot.html" target="_blank"><IMG alt="" src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/product_1.jpg" title="abcd冷作模具钢"/></A>
+									</DIV>
+							
+									<DIV class="section" id="section3">
+										<A href="prot.html" target="_blank"><IMG alt="" src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/product_1.jpg" title="abcd冷作模具钢"/></A>
+										<A href="prot.html" target="_blank"><IMG alt="" src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/product_2.jpg" title="abcd冷作模具钢"/></A>
+										<A href="prot.html" target="_blank"><IMG alt="" src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/product_3.jpg" title="abcd冷作模具钢"/></A>
+										<A href="prot.html" target="_blank"><IMG alt="" src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/product_4.jpg" title="abcd冷作模具钢"/></A>
+										<A href="prot.html" target="_blank"><IMG alt="" src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/product_5.jpg" title="abcd冷作模具钢"/></A>
+									</DIV>
+								</DIV>
+							</DIV>
+							<A id="prevLink" onClick="my_glider.previous();return false;" href="#">Previous</A>&nbsp;
+							<A id="nextLink" onClick="my_glider.next();return false" href="#">Next</A>
+							<SCRIPT language="javascript" type="text/javascript">
+								var my_glider = new Glider('my-glider', {duration:0.5});
+							</SCRIPT>
+						</DIV>
+					</DIV>
+				--> 
+				</div>
+		    
+		    	<!-- tab3 客户服务-->
+			    <div id="TabTab03Con3" style="display:none">
+					<div style="width:330px; float:left; ">
+						<div class="tab_head">-客户留言</div>
+						<div class="form_list">
+							<p>姓名：<input name="name" type="text" maxlength="6" /></p>
+							<p>公司：<input name="company" type="text" maxlength="6" /></p>
+							<p>邮箱：<input name="email" type="text" /></p>
+							<p align="center" ><input name="up" type="button" value="提交" /><input name="up" type="button" value="重置" /></p>
+						</div>			
+					</div>
+					
+					<div style="width:330px; float:left; ">
+						<div class="tab_head">-产品下载中心</div>
+						<div class="tebone_list">
+							<ul>
+								<li><a href="产品型录.docx">GRE f#$%特殊钢材#%$#@$%@#$%型录</a></li>
+								<li><a href="#">GRE 84063@$^%钢材3#$%型录</a></li>
+								<li><a href="#">GRE W87高速粉@#$%@#$%末钢</a></li>
+								<li><a href="#">GRE 国产钢材列表@#%@$%@#$说明</a></li>
+							</ul>
+						</div>			
+					</div>		
+					
+					<div style="width:330px; float:left; ">
+						<div class="tab_head">-销售网络</div>
+						<div style="margin-left: 40px;"><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate4/map.png"/></div>				
+					</div>		
+				</div>
+			</div>
+		
+			<!-- footer-->
+			<div id="footer" ><ui:include src="/ee/companyShops/steelTemplate4/footer.xhtml" /></div>
+		</div>
+
+	</ui:define>
+</ui:composition>
+</html>

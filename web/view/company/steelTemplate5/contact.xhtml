@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:e="http://www.ejs.com/core"
+	xmlns:a="http://richfaces.org/a4j" xmlns:r="http://richfaces.org/rich">
+<ui:composition template="/ee/template/framework.xhtml">
+	<ui:define name="title">steelTemp5--联系我们</ui:define>
+	
+	<ui:define name="body">
+		<link rel="stylesheet" type="text/css" href="${facesContext.externalContext.requestContextPath}/css/companyShops/steelTemplate5.css" />
+		
+		<div class="container">
+			<!--heard -->
+			<div><ui:include  src="/ee/companyShops/steelTemplate5/header.xhtml" /></div>
+					
+		
+		<div class="mainWarp">
+		  	<div style="width:100%;  margin-bottom:20px; height:95px; ">
+				<div class="topimg">
+					<a href="product.html">
+						<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/prod_big1.gif" style="padding:15px 0 0 10px;" border="0" />
+					</a>
+					<div class="topfont" style=" position:absolute; left: 100px; top: 227px;">
+					  	<div align="left"><a href="product.html">模具钢系列</a></div>
+					</div>
+				</div>
+				<div class="topimg mleft">
+					<a href="#">
+						<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/prod_big2.gif" style="padding:15px 0 0 10px;" />
+					</a>
+					<div class="topfont" style=" position:absolute; left: 297px; top: 227px;">
+					  	<div align="left">特钢系列</div>
+					</div>
+				</div>
+				<div class="topimg mleft">
+					<a href="#">
+						<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/prod_big3.gif" style="padding:15px 0 0 10px;" />
+					</a>
+					<div class="topfont" style=" position:absolute; left: 503px; top: 226px;">
+					  <div align="left">不锈钢系列</div>
+					</div>
+				</div>
+				<div class="topimg mleft">
+					<a href="#">
+						<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/prod_big4.gif" style="padding:15px 0 0 10px;" />
+					</a>
+					<div class="topfont" style=" position:absolute; left: 705px; top: 227px;">
+					  <div align="left">铝材系列</div>
+					</div>
+				</div>
+				<div class="topimg mleft">
+					<a href="#">
+						<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/prod_big5.gif" style="padding:15px 0 0 10px;" />
+					</a>
+					<div class="topfont" style=" position:absolute; left: 908px; top: 225px;">
+					  <div align="left">粉末钢系列</div>
+					</div>
+				</div>
+			</div>
+		  	
+			
+			<DIV class="casemain" >
+				<div class="introd_head piaoti" >
+					<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/pao4.png" width="123" height="27" />
+				</div>
+				<div style="margin:25px 0 30px 100px; width:365px; float:left;" >
+					<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/lx.jpg" />
+				</div>
+				<div align="center" class="contact" >
+				  	<table  align="left" width="350" border="0" cellspacing="0" cellpadding="0">
+						<tr><td>一诺模具材料有限公司</td></tr>
+						<tr><td>联系人：张先生</td></tr>
+						<tr><td>电话：0512-9874581</td></tr>
+						<tr><td>传真：0512-9887125</td></tr>
+						<tr><td>邮箱：service@main.com</td></tr>
+					  	<tr><td>网址：www.buymoldfun.ocm</td></tr>
+					  	<tr><td>地址：江苏省昆山市XX路XXX号</td></tr>
+					  	<tr><td>&nbsp;</td></tr>
+					</table>
+				</div>
+		  </DIV>
+		  <!--case end-->
+	  </div>
+	</div>
+		
+	<div><ui:include src="/ee/companyShops/steelTemplate5/footer.xhtml" /></div>
+
+	</ui:define>
+</ui:composition>
+</html>

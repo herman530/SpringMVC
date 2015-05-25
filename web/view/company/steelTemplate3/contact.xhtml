@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:e="http://www.ejs.com/core"
+	xmlns:a="http://richfaces.org/a4j" xmlns:r="http://richfaces.org/rich">
+<ui:composition template="/ee/template/framework.xhtml">
+	<ui:define name="title">steelTemp3--公司介绍</ui:define>
+	<ui:define name="body">
+	<link rel="stylesheet" type="text/css" href="${facesContext.externalContext.requestContextPath}/css/companyShops/steelTemplate3.css" />
+	
+		<div id="wrapper">
+			<div id="container">
+				
+				<!-- header  -->
+				<div><ui:include  src="/ee/companyShops/steelTemplate3/header.xhtml" /></div>
+				
+				<div class="container-right">
+					<div class="workarea">
+						<div class="welcomezone">
+							<h1>联系我们 </h1>
+							<div style="margin-bottom:10px;">
+			                <div>
+			                	<p><strong> XXXX 模具钢材有限公司</strong>本着诚信经营，为客户提供价格实惠产品的理念，大批量采购货物取得低成本的货物，并尽量减少货物流通的环节，从而减少成本使客户得到实惠。</p>
+			                    <p>咨询或订购产品，请致电、传真或者电邮给敝司。我们将会尽快的回复。若阁下找不到所需的货物，请给予敝司产品的资料，或许我们将帮你把困难解决。</p>
+			                </div>
+							<div id="steel3form" >
+			                    <h6>在此处留言:</h6>
+								<form id="steel3form"  action="form.php" method="post">
+			                    	<table width="97%" cellpadding="0" cellspacing="0" >
+			                        	<tr class="form_tr">
+			                            	<td width="86" align="center" valign="top" id="Company">
+			                            		<strong><label for="Company">公司:</label></strong>
+			                            	</td>
+			                                <td width="614" align="left" valign="top"><input name="Company" type="text" size="40" /></td>
+			                            </tr>
+			                            <tr class="form_tr">
+			                                <td align="center" valign="top" id="Contact">
+			                                	<strong><label for="FullName">姓名:</label></strong>
+			                                </td>
+			                                <td align="left" valign="top"><input name="Name" type="text" size="40" /></td>
+			                            </tr>
+			                            <tr class="form_tr">
+			                                <td align="center" valign="top" id="Address">
+			                                	<strong><label for="Address">地址:</label></strong>
+			                                </td>
+			                                <td align="left" valign="top"><input name="Address" type="text" size="40" /></td>
+			                            </tr>
+			                            <tr class="form_tr">
+			                                <td align="center" valign="top" id="Phone">
+			                                	<strong><label for="Phone">电话:</label></strong>
+			                                </td>
+			                                <td align="left" valign="top"><input name="Phone" type="text" size="40" /></td>
+			                            </tr>
+			                            <tr class="form_tr">
+			                                <td align="center" valign="top" id="Email">
+			                               		<strong><label for="Email">邮箱:</label></strong>
+			                               	</td>
+			                                <td align="left" valign="top"><input name="Email" type="text" size="40" /></td>
+			                            </tr>
+			                            <tr class="form_tr">
+			                                <td align="center" valign="top" id="Comments">
+			                                	<strong><label for="Comments">留言:</label></strong>
+			                                </td>
+			                                <td align="left" valign="top"><textarea name="comments" cols="32" rows="6"></textarea></td>
+			                            </tr>
+			                            <tr class="form_tr">
+			                                <td></td>
+			                                <td><input type="submit" name="submit" class="button" value="提交" /></td>
+			                            </tr>
+			                       	</table>
+							    </form>
+							      </div>
+								  <div> <br />
+			                          <h6>我们的联系方式: </h6>
+								      <img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate3/photo-contact.jpg" alt="" width="196" height="130" class="project-img" />
+			                          <p class="cotact_foot">
+									  	<span><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate3/ico-add.png" alt="Phone" width="20" height="16" hspace="2"/>地址:</span>江苏省昆山市长江南路出口加工区第二大道269号<br />
+									  	<span><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate3/ico-phone.png" alt="Phone" width="20" height="16" hspace="2"/>销售总线 :</span>0512-9854745<br />
+										<span><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate3/ico-phone.png" alt="Phone" width="20" height="16" hspace="2"/>华东地区: </span>0512-5698562<br />
+			                            <span><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate3/ico-fax.png" alt="Fax" width="20" height="16" hspace="2"/>传真:</span> 0512-5698745<br />
+			                            <span><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate3/ico-website.png" alt="WWW Link" width="20" height="16" hspace="2"/> 网址:</span><a href="#">www.moldfun.com</a><br />
+			                            <span><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate3/ico-email.png" alt="Email" width="20" height="16" hspace="2"  /> Email:</span><a href="mailto:info@mycompany.com">service@email.com</a><br />
+			                            <br />
+			                          </p>
+							      </div>
+						    </div>
+						  </div>
+					</div>
+			</div>
+
+				<div><ui:include  src="/ee/companyShops/steelTemplate3/footer.xhtml" /></div>
+			</div>
+			<div class="clear"></div>
+
+		</div>
+	</ui:define>
+</ui:composition>
+</html>

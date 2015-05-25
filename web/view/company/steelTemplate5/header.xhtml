@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:e="http://www.ejs.com/core"
+	xmlns:a="http://richfaces.org/a4j" xmlns:r="http://richfaces.org/rich">
+<ui:composition template="/ee/template/blank.xhtml">
+	<ui:define name="content">
+	<link rel="stylesheet" type="text/css" href="${facesContext.externalContext.requestContextPath}/css/companyShops/steelTemplate5.css" />
+		<div id="header">
+			<ul class="topnav">
+		    	<li><a href="${facesContext.externalContext.requestContextPath}/ee/companyShops/steelTemplate5/body.xhtml">首页</a></li>
+				<li><a href="${facesContext.externalContext.requestContextPath}/ee/companyShops/steelTemplate5/companyIntro.xhtml">关于我们</a></li>
+		        <li>
+		        	<a href="${facesContext.externalContext.requestContextPath}/ee/companyShops/steelTemplate5/salesInfo.xhtml">产品中心</a>
+		         		<ul class="subnav">
+		                	<li><a href="#">模具钢系列</a></li>
+		                    <li><a href="#">特钢系列</a></li>
+		                    <li><a href="#">不锈钢系列</a></li>
+		                    <li><a href="#">铝材系列</a></li>  
+							<li><a href="#">粉末钢系列</a></li>                    
+		                </ul>
+		        </li>
+		        <li><a href="${facesContext.externalContext.requestContextPath}/ee/companyShops/steelTemplate5/successfulCase.xhtml">应用案例</a></li>
+				<li><a href="${facesContext.externalContext.requestContextPath}/ee/companyShops/steelTemplate5/technicalArticle.xhtml">技术文章</a></li>
+		        <li><a href="${facesContext.externalContext.requestContextPath}/ee/companyShops/steelTemplate5/certificate.xhtml">资质证书</a></li>
+		        <li><a href="${facesContext.externalContext.requestContextPath}/ee/companyShops/steelTemplate5/contact.xhtml">联系我们</a></li>
+		    </ul>
+		</div>
+	</ui:define>
+</ui:composition>
+</html>

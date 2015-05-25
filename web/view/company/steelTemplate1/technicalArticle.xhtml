@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:e="http://www.ejs.com/core"
+	xmlns:a="http://richfaces.org/a4j" xmlns:r="http://richfaces.org/rich">
+<ui:composition template="/ee/template/framework.xhtml">
+	<ui:define name="title">steelTemp1--技术文章</ui:define>
+
+	<ui:define name="header">
+		<div>
+			<ui:include	src="/ee/companyShops/steelTemplate1/header.xhtml" />
+		</div>
+	</ui:define>
+	
+	<!-- 主体部分 -->
+	<ui:define name="body">
+	<link rel="stylesheet" type="text/css" href="${facesContext.externalContext.requestContextPath}/css/companyShops/steelTemplate1.css" />
+	<SCRIPT type="text/javascript">
+		 function show_hiddendiv(){
+		 	document.getElementById("hidden_div").style.display='block';
+		 	document.getElementById("_strHref").href='javascript:hidden_showdiv();';
+		 	document.getElementById("_strSpan").innerHTML="隐藏部分";
+		 }
+		 function hidden_showdiv(){
+		 	document.getElementById("hidden_div").style.display='none';
+		 	document.getElementById("_strHref").href='javascript:show_hiddendiv();';
+		 	document.getElementById("_strSpan").innerHTML="显示全部";
+		 }
+	</SCRIPT>
+		<div id="header">
+			<div id="header-banner-wrap">
+				<div id="banner">
+					<p>我们销售的不只是产品，我们销售的更是优质的服务</p>
+				</div>
+				<!--<div id="header-banner">
+				   <h2>瑞典特牢钢</h2>
+				   <h2>
+				   		<p>由钢厂直接预硬的淬火调质钢，不再需要热处理。<br/>
+						        ◆ 钢板本身即拥有ESR电渣重熔的纯净性能。<br/>
+						       ◆ 适用于高抛光，精蚀刻以及对表面进行氮化和PVD涂层处理要求的模具钢。
+					  	</p>
+			         	<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate1/icon1.png" width="165" height="40" />
+				   </h2>
+		           <a href="#" class="big-button iePNG"></a><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate1/globe.png" id="globe" alt="" />
+			    </div>-->
+			</div>
+		</div>
+		
+		<div id="content">
+			<div class="content-container">
+				<div class="info-box widest-box">
+					<h3>技术文章</h3>
+					<p>
+						随着中国经济的持续高速增长，国内 模具 制造行业更是以高于GDP的增速快速发展。这也为国内模具钢的发展提供了一个巨大的市场，带动了国内模具钢的产量、品种、规格及品质水平的迅速提高。作为模具制造的基体，模具钢的性能好坏直接影响着模具的使用寿命、生产成本等一系列因素，被越来越被多的模具制造厂商所重视。 新型冷作模具钢的研发<SPAN style="DISPLAY: none" id="hidden_div">	
+					        安达谦一先生：汽车行业一直被认为是牵引各国产业的原动力。目前，各汽车生产厂家为了达到轻量化、安全设计的目的，急速地扩大高强力钢板(超硬,超强)的有效利用。可是，从冲压加工本身的难成形性上，模具寿命的问题却又被日渐提上了日程。另一方面，模具行业面临的成本降低和供货期缩短已经是迫在眉睫。因此双方行业都最为渴望要求开发即容易切削、热处理后的尺寸变形又少的 模具材料 。日立金属以100年以上的制钢所积累出的经验与开发力相结合，开发出远远超出常用材SKD11特性的下一代冷作模具钢，那就是SLD-MAGIC。通过与SKD11改良钢8％Cr钢（本公司商品SLD8）的对比测试，高性能新型冷作模具钢SLD-MAGIC在提高模具寿命、减少模具生产总成本并缩短供货期方面表现出了相当的优势。主要体现在以下几方面：－耐磨耗性：最高硬度在HRC62其耐磨性约提高35％，使模具寿命大幅提高。－表面处理性：表面处理膜（CVD等方法）的密着性约提高30％，防止高强力钢的弯曲，拉伸等成形时产生的刮痕。	－热处理特性：热处理寸变约降低40％，形状的偏差也会改善。针对热处理和表面处理的尺寸变形量少，降低修复时间。	－切削性：切削性约提高35％，基于提高加工效率，在模具制造上缩短加工时间。以上耐磨性、热处理特性、表面处理性、切削性的特性值是同本公司材料SLD8进行比较的代表性数 据 ，可能和实际的产品所得特性值略有差异。模具业的快速发展对模具钢提出新的要求李实博士：一般来讲，技术标准除了图纸外还包括模具材料的选取，热处理具体工艺，放电加工的控制，表面粗糙度，模具部件的（如压铸摸顶针）表面处理等。这就要求模具钢材供应商能够提供针对不同应用需求的高性能模具钢，并且能够与模具制造商沟通有关材质性能以外的模具制造技术规范指定的工艺要求，如表面涂层工艺。奥伯－杜瓦模具技术（无锡）有限公司能够为广大的模具制造商提供法国奥伯－杜瓦生产制造的高质量模具钢材并且现有 销 售队伍能够与那些模具制造商沟通来达到外国买家指定的技术规范。公司提供热作模具钢材，冷作、塑胶及玻璃模具钢材。在某些应用上，如高压压铸模具等，法国奥伯－杜瓦公司拥有其内定的生产技术规范。生产的产品被欧美汽车制造商所指定并认可。其产品质量高于欧美行业技术规范（如NADCA北美压铸学会规范）并保证了模具寿命的稳定与长期性。在此应用上，奥伯－杜瓦品牌的ADC3尤其适用于那些大型模具应用上。目前汽车产业发展趋势之一是用压力 铸造 法制造大型铝、镁合金部件，如汽车发动机缸体。制造此类产品要求模具钢材厚度在300mm以上，并且以三维锻造钢材质为首选。奥伯－杜瓦工厂在三维锻造方面有其独到之处，从而保证了使用材质的三维性能均一性。此外奥伯－杜瓦品牌的SMV3W（1.2343ESR），SMV4S（1.2344ESR）亦被汽车制造商指定。在欧洲，以上三类产品在实际应用中都体现了良好的性能并延长了模具寿命,从而降低了单件部件的成本价格。在某些应用上,如生产汽车变速箱壳体，采用ADC3钢材制造的模具其寿命达到了20万件以上，远远高出常用的1.2344ESR钢种。 》能够最终拍出来，是一次奇迹。这是一部科幻电影，是我喜欢的东西，科幻电影要表现的是我们现在无法接触到的事物，这是一种预言，它会让你反思我们现在在做的一切，将来会发生什么样的后果？这就是我拍《阿凡达》的初衷之一，我对现在人类对大自然所做的一切感到深深的忧虑，我想将来也许会受到大自然的报复。　　故事开始于地球，杰克·萨利（Jake Sully，萨姆·沃辛顿　饰）是一个双腿瘫痪的老兵，他觉得没有任何东西值得他去战斗，因此当被要求去潘多拉星球到那里的采矿公司工作时欣然接受。　　潘多拉星球上有一种别的地方都没有的矿物元素"unobtanium"，它将彻底改变人类的能源产业，正是受此吸引人类才不远万里来到这里拓荒。不过资源丰富的潘多拉星球完全不适合人类生活，这里的空气对人类有毒，本土的动植物是凶猛的掠食者，非常危险。这里的环境也造就了与人类不同的一群生物：10英尺高的蓝色类人生物"Navi族"。Navi族对于人类拓荒者的到来非常不满，他们也不喜欢人类的机器在这个星球的土地上到处挖矿、留下斑斑伤痕。　　由于潘多拉星球环境严酷，人类传统的宇航服、机甲都不足以保护矿工，于是科学家们转向了克隆技术：他们将人类DNA和Navi人的DNA结合在一起，制造了一个克隆Navi人，这个克隆Navi人可以让人类的意识进驻其中，成为人类在这个星球上自由活动的"化身"。然而并不是任何人都可以操纵这个克隆Navi人，只有DNA与他身上人类DNA配型相符的人才有这样的能力。　　杰克·萨利的哥哥是这个克隆Navi的人类DNA捐献者，他就可以操纵这个克隆Navi人，然而他被杀死了，采矿的公司为了不让砸下去的钱白砸（克隆Navi人价格不菲），必须找到一个可以代替他操纵克隆Navi的人，这个人的DNA还必须和其配型相符，于是他们自然就找到了杰克·萨利，杰克·萨利对此很高兴，应为那意味着他又能走路了。　　
+					        几年后，杰克·萨利到了潘多拉星球，他发现这里的美景简直无法用语言来形容，高达900英尺的参天巨树、星罗棋布飘浮在空中的群山、色彩斑斓充满奇特植物的茂密雨林、晚上各种动植物还会发出光……就如同梦中的奇幻花园。不过很快他就体验到了这里的危险，一头毒狼（潘多拉星球一种本土生物）与他狭路相逢，眼看就要被吃掉，一支箭射死了毒狼，杰克得救了。救他的是Navi族的一个女孩（佐伊·萨尔达娜　饰），杰克从她口中了解到了更多潘多拉星球的知识。　　懒人图库Navi族人一直以来都与潘多拉星球的其他物种和谐相处，过着一种简朴天然的生活，杰克在和这个Navi女孩的相处过程中逐渐转变了对人类来这里采矿的看法，他意识到他已经找到值得为之战斗的东西了。　　不过杰克·萨利如果要加入Navi族人对抗人类入侵者的战争，要付出很大的代价：他并不能永远呆在"化身"中，当"化身"--克隆Navi人睡觉时，他就会回到自己半身不遂的人类身体中，只有通过专门的连接设备才能重新回到"化身"中。一旦与自己的同胞为敌，他就失去了与"化身"结合的可能，只能困在残疾的身体里，并失去那个他越来越喜欢的Navi女孩……</SPAN>...	
+					   (<A id="_strHref" href="javascript:show_hiddendiv();"><SPAN id="_strSpan">显示全部</SPAN></A>)
+					</p>
+					<p>本文对 Invar 钢焊接性能与切削性能进行研究，试验结果表明坡口间隙 2mm，堆焊电流 170A、保护气体15L/min可得到良好的焊接接头；对 Invar 钢进行切削试验，试验表														明粗加工采用转速 1400r/min、进给速度 400mm/min、切深 2.5mm 机床无异常,刀具未见磨损，精加工转速为2400r/min、进给速度 480mm/min、切深 0.5mm 可得到良好的切削表面。</p>
+					<p>本文对 Invar 钢焊接性能与切削性能进行研究，试验结果表明坡口间隙 2mm，堆焊电流 170A、保护气体15L/min可得到良好的焊接接头；对 Invar 钢进行切削试验，试验表明粗加工采用转速 1400r/min、进给速度 400mm/min、切深 2.5mm 机床无异常,刀具未见磨损，精加工转速为2400r/min、进给速度 480mm/min、切深 0.5mm 可得到良好的切削表面。</p>
+					<p>本文对 Invar 钢焊接性能与切削性能进行研究，试验结果表明坡口间隙 2mm，堆焊电流 170A、保护气体15L/min可得到良好的焊接接头；对 Invar 钢进行切削试验，试验表明粗加工采用转速 1400r/min、进给速度 400mm/min、切深 2.5mm 机床无异常,刀具未见磨损，精加工转速为2400r/min、进给速度 480mm/min、切深 0.5mm 可得到良好的切削表面。</p>
+					<p>本文对 Invar 钢焊接性能与切削性能进行研究，试验结果表明坡口间隙 2mm，堆焊电流 170A、保护气体15L/min可得到良好的焊接接头；对 Invar 钢进行切削试验，试验表明粗加工采用转速 1400r/min、进给速度 400mm/min、切深 2.5mm 机床无异常,刀具未见磨损，精加工转速为2400r/min、进给速度 480mm/min、切深 0.5mm 可得到良好的切削表面。</p>
+				</div>
+			</div>
+			
+			<div class="wide-wrapper">
+				<div class="content-container">
+					<div class="info-box">				
+						<h3>联系我们</h3>
+						<ul class="telmail">
+							<li style="background:url(${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate1/phone.png) no-repeat;">400-678-0626</li>
+							<li style="background:url(${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate1/email.png) no-repeat;">service@mail.com</li>
+						</ul>
+					</div>
+					<div class="info-box">
+						<h3>我们的使命</h3>
+						<p>展望未来，汉达精密将致力于提升产品增值服务的质量，并用更前瞻性的眼光和虚心的学习态度去看待全球市场，立志在机构件行业里，成为世界舞台上所有国际大厂不可或缺的重要伙伴。</p>
+					</div>
+					<div class="info-box">
+						<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate1//photo-girl-2.jpg" alt="" width="239" height="184" class="photo" />			</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		
+		</div>
+	</ui:define>
+	
+	<!-- footer -->
+	<ui:define name="footer">
+			<ui:include src="/ee/companyShops/steelTemplate1/footer.xhtml"></ui:include>
+	</ui:define>
+
+</ui:composition>
+</html>

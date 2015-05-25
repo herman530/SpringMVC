@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:e="http://www.ejs.com/core"
+	xmlns:a="http://richfaces.org/a4j" xmlns:r="http://richfaces.org/rich">
+<ui:composition template="/ee/template/framework.xhtml">
+	<ui:define name="title">steelTemp1--联系我们</ui:define>
+
+	<ui:define name="header">
+		<div>
+			<ui:include	src="/ee/companyShops/steelTemplate1/header.xhtml" />
+		</div>
+	</ui:define>
+	
+	<!-- 主体部分 -->
+	<ui:define name="body">
+	<link rel="stylesheet" type="text/css" href="${facesContext.externalContext.requestContextPath}/css/companyShops/steelTemplate1.css" />
+	<SCRIPT type="text/javascript">
+		 function show_hiddendiv(){
+		 	document.getElementById("hidden_div").style.display='block';
+		 	document.getElementById("_strHref").href='javascript:hidden_showdiv();';
+		 	document.getElementById("_strSpan").innerHTML="隐藏部分";
+		 }
+		 function hidden_showdiv(){
+		 	document.getElementById("hidden_div").style.display='none';
+		 	document.getElementById("_strHref").href='javascript:show_hiddendiv();';
+		 	document.getElementById("_strSpan").innerHTML="显示全部";
+		 }
+	</SCRIPT>
+		<div id="header">
+			<div id="header-banner-wrap">
+				<div id="banner">
+					<p>我们销售的不只是产品，我们销售的更是优质的服务</p>
+				</div>
+				<!--<div id="header-banner">
+				   <h2>瑞典特牢钢</h2>
+				   <h2>
+				   		<p>由钢厂直接预硬的淬火调质钢，不再需要热处理。<br/>
+						        ◆ 钢板本身即拥有ESR电渣重熔的纯净性能。<br/>
+						       ◆ 适用于高抛光，精蚀刻以及对表面进行氮化和PVD涂层处理要求的模具钢。
+					  	</p>
+			         	<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate1/icon1.png" width="165" height="40" />
+				   </h2>
+		           <a href="#" class="big-button iePNG"></a><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate1/globe.png" id="globe" alt="" />
+			    </div>-->
+			</div>
+		</div>
+		
+		<div id="content">
+			<div class="wide-wrapper">
+				<div class="content-container">
+					<div class="info-box">
+						<h3>联系我们</h3>
+						<ul class="contact">					
+							<li><strong>电话</strong>：400-678-0626</li>
+							<li><strong>传真</strong>：0512-1254635</li>
+							<li><strong>邮箱</strong>：<a href="mailto:service@mail.com">service@mail.com</a></li>
+							<li><strong>地址</strong>：中国江苏省昆山市综合保税区</li>
+							<li><strong>邮编</strong>：245345</li>
+							<li><strong>网址</strong>：<a href="www.moldfun.com" target="_blank">www.company.com</a></li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+					<div class="info-box wide-box">
+						<h3>公司简介</h3>
+						<div>
+							<p><img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate1/photo-contacts-1.jpg" class="photo" alt="" /><strong>汉达精密科技股份有限公司</strong> 成立于 1999 年，为神达计算机机构的一员。 汉达精密在机构行业拥有多年丰富经验，是业内享负盛名的机构件供货商，汉达精密所经销的机构件主要应用在4C1M － 即消费性电子产品 (Consumer electronics) 、计算机产品 (Computer) 、通讯产品 (Communication) 、 汽车产品 (Car) 及移动电话 (Mobile) 范畴。汉达精密总部位于台湾林口华亚科技园区，并于越南的北宁、中国的江苏昆山及广东顺德设有多个生产单位。主要业务为信息产品机构件的打样、模具设计、开模、塑料射出、冲压到涂装、印刷及后段组装；可提供从模型到量产端，完整的机构解决方案。</p>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			
+			<div class="content-container">
+				<div class="info-box widest-box">
+					<h4>Contact Form</h4>
+					<form method="post" action="" id="contact-form">
+						<label for="name">您的名字:</label><input id="name" name="name" type="text" /><div class="clear"></div>
+						<label for="email">您的邮箱:</label><input id="email" name="email" type="text" /><div class="clear"></div>
+						<label for="message">您的留言:</label><textarea id="message" name="message" cols="10" rows="9"></textarea><div class="clear"></div>
+						<input type="submit" class="iePNG" id="send-button"	value=""/><input type="reset" class="iePNG" id="clear-button" value=""/><div class="clear"></div>
+					</form>
+				</div>
+			</div>
+			
+			
+			<!--<div class="wide-wrapper">
+				<div class="content-container">
+					<div class="info-box">				
+						<h3>联系我们</h3>
+						<ul class="telmail">
+							<li style="background:url(${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate1/phone.png) no-repeat;">400-678-0626</li>
+							<li style="background:url(${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate1/email.png) no-repeat;">service@mail.com</li>
+						</ul>
+					</div>
+					<div class="info-box">
+						<h3>我们的使命</h3>
+						<p>展望未来，汉达精密将致力于提升产品增值服务的质量，并用更前瞻性的眼光和虚心的学习态度去看待全球市场，立志在机构件行业里，成为世界舞台上所有国际大厂不可或缺的重要伙伴。</p>
+					</div>
+					<div class="info-box">
+						<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate1//photo-girl-2.jpg" alt="" width="239" height="184" class="photo" />			</div>
+					<div class="clear"></div>
+				</div>
+			</div>-->
+		
+		</div>
+	</ui:define>
+	
+	<!-- footer -->
+	<ui:define name="footer">
+			<ui:include src="/ee/companyShops/steelTemplate1/footer.xhtml"></ui:include>
+	</ui:define>
+
+</ui:composition>
+</html>

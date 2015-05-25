@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:e="http://www.ejs.com/core"
+	xmlns:a="http://richfaces.org/a4j" xmlns:r="http://richfaces.org/rich">
+<ui:composition template="/ee/template/framework.xhtml">
+	<ui:define name="title">steelTemp5--成功案例</ui:define>
+	
+	<ui:define name="body">
+		<link rel="stylesheet" type="text/css" href="${facesContext.externalContext.requestContextPath}/css/companyShops/steelTemplate5.css" />
+		
+		<div class="container">
+			<!--heard -->
+			<div><ui:include  src="/ee/companyShops/steelTemplate5/header.xhtml" /></div>
+					
+		
+		<div class="mainWarp">
+		  	<div style="width:100%;  margin-bottom:20px; height:95px; ">
+				<div class="topimg">
+					<a href="product.html">
+						<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/prod_big1.gif" style="padding:15px 0 0 10px;" border="0" />
+					</a>
+					<div class="topfont" style=" position:absolute; left: 100px; top: 227px;">
+					  	<div align="left"><a href="product.html">模具钢系列</a></div>
+					</div>
+				</div>
+				<div class="topimg mleft">
+					<a href="#">
+						<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/prod_big2.gif" style="padding:15px 0 0 10px;" />
+					</a>
+					<div class="topfont" style=" position:absolute; left: 297px; top: 227px;">
+					  	<div align="left">特钢系列</div>
+					</div>
+				</div>
+				<div class="topimg mleft">
+					<a href="#">
+						<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/prod_big3.gif" style="padding:15px 0 0 10px;" />
+					</a>
+					<div class="topfont" style=" position:absolute; left: 503px; top: 226px;">
+					  <div align="left">不锈钢系列</div>
+					</div>
+				</div>
+				<div class="topimg mleft">
+					<a href="#">
+						<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/prod_big4.gif" style="padding:15px 0 0 10px;" />
+					</a>
+					<div class="topfont" style=" position:absolute; left: 705px; top: 227px;">
+					  <div align="left">铝材系列</div>
+					</div>
+				</div>
+				<div class="topimg mleft">
+					<a href="#">
+						<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/prod_big5.gif" style="padding:15px 0 0 10px;" />
+					</a>
+					<div class="topfont" style=" position:absolute; left: 908px; top: 225px;">
+					  <div align="left">粉末钢系列</div>
+					</div>
+				</div>
+			</div>
+		  	
+			
+			<DIV class="casemain" style="height: 450px;" >
+				<div class="introd_head piaoti" >
+					<img src="${facesContext.externalContext.requestContextPath}/images/companyShops/steelTemplate5/case.png" width="123" height="27" />
+				s</div>
+				<div style="margin:25px 0 30px 20px; width:95%; float:left; line-height:35px;" >
+				   	<p align="center">笔记本电脑后盖（40%玻纤） </p>
+				   	<p style="text-indent:25px;">浙江某大型台资企业主要为美国惠普、日本东芝等国际知名品牌代工生产笔记本。2011年9月，该公司开始研制含玻纤40%的模具，母模仁采用一胜佰8407材料，热处理至HRC52°，公模仁采用TOOLOX44，虽然硬度只有HRC44°，但客户没有再实施表面处理工艺（如氮化工艺）。客户分批次生产，第一批次2万模，第二批次6万模，主要为观察TOOLOX44的使用状况。至2012年5月，该模具已生产约10万模，模具生产正常。公母模仁没有出现磨损和腐蚀的现象。客户决定继续生产，并在合适的时候对TOOLOX44实施表面处理工艺（我司可提供的IONIT OX等离子处理）以期达到最佳寿命。</p>
+				   	<p style="text-indent:25px;"><a href="${facesContext.externalContext.requestContextPath}/ee/companyShops/steelTemplate5/successfulCase.xhtml">返回</a></p>
+			    </div>
+		  </DIV>
+		  <!--case end-->
+	  </div>
+	</div>
+		
+	<div><ui:include src="/ee/companyShops/steelTemplate5/footer.xhtml" /></div>
+
+	</ui:define>
+</ui:composition>
+</html>
